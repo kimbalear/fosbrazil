@@ -1,56 +1,3 @@
-{{!
-This file is part of Moodle - http://moodle.org/
-
-Moodle is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Moodle is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Moodle. If not, see
-<http: //www.gnu.org/licenses />.
-}}
-{{!
-@template theme_boost/drawers
-
-Boost drawer template.
-
-Context variables required for this template:
-* sitename - The name of the site
-* output - The core renderer for the page
-* bodyattributes - attributes for the body tag as a string of html attributes
-* sidepreblocks - HTML for the blocks
-* hasblocks - true if there are blocks on this page
-* courseindexopen - true if the nav drawer should be open on page load
-* regionmainsettingsmenu - HTML for the region main settings menu
-* hasregionmainsettingsmenu - There is a region main settings menu on this page.
-
-Example context (json):
-{
-"sitename": "Moodle",
-"output": {
-"doctype": "
-<!DOCTYPE html>",
-"page_title": "Test page",
-"favicon": "favicon.ico",
-"main_content": "<h1>Headings make html validators happier</h1>"
-},
-"bodyattributes":"",
-"sidepreblocks": "<h2>Blocks html goes here</h2>",
-"hasblocks":true,
-"courseindexopen": true,
-"navdraweropen": false,
-"blockdraweropen": true,
-"regionmainsettingsmenu": "",
-"hasregionmainsettingsmenu": false,
-"addblockbutton": ""
-}
-}}
 {{> theme_boost/head }}
 
 <body {{{ bodyattributes }}}>
@@ -63,9 +10,6 @@ Example context (json):
     {{#courseindex}}
         {{< theme_boost/drawer }}
             {{$id}}theme_boost-drawers-courseindex{{/id}}
-            {{$drawerheadercontent}}
-                {{> theme_boost/courseindexdrawercontrols}}
-            {{/drawerheadercontent}}
             {{$drawerclasses}}drawer drawer-left {{#courseindexopen}}show{{/courseindexopen}}{{/drawerclasses}}
             {{$drawercontent}}
                 {{{courseindex}}}
@@ -95,6 +39,30 @@ Example context (json):
         {{/ theme_boost/drawer}}
     {{/hasblocks}}
     <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers {{#courseindexopen}}show-drawer-left{{/courseindexopen}} {{#blockdraweropen}}show-drawer-right{{/blockdraweropen}} drag-container">
+        <div class="wrapper_home">
+
+        <section class="row">
+            <div class="col-12 pt-3 pb-3">
+                <div class="card ktt_style-card">
+                    <div class="card-body">
+                        <h2>{{myname}}.</h2>
+                        <span>Override y herencia !</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra mauris quis nulla tincidunt, non interdum eros elementum. Vivamus pharetra dapibus arcu. Pellentesque vel finibus nisl, quis laoreet felis. Maecenas convallis rhoncus venenatis. Quisque nisi ex, imperdiet ut nibh a, pellentesque ornare justo. Fusce hendrerit sollicitudin placerat. Quisque sit amet ornare tellus. Etiam turpis nulla, dapibus eu aliquet quis, porta id purus. Donec blandit enim in vulputate egestas. Mauris facilisis tellus non ante eleifend tempus. Cras aliquam sed lectus id consectetur. Vivamus quis pellentesque justo, placerat luctus lorem. Quisque at turpis et libero scelerisque condimentum sit amet sed mauris. Vivamus ornare, odio et volutpat dignissim, nisi est congue est, eget hendrerit urna tellus eget orci. Curabitur lobortis lacinia neque, nec rhoncus est ullamcorper quis.</p>
+
+        <p>Vestibulum malesuada porttitor nunc, non tempor turpis. Aliquam maximus ex enim, sit amet hendrerit sapien varius at. Curabitur sodales scelerisque rhoncus. Vivamus feugiat orci elit, ac interdum magna faucibus ut. Sed faucibus justo elit, vitae tristique nisi feugiat ac. Maecenas tristique risus vitae ligula dapibus condimentum. Donec quis ligula euismod, congue justo luctus, sodales orci. Praesent sit amet fermentum velit. Donec volutpat ligula in faucibus porta. In scelerisque vestibulum ullamcorper. Curabitur sit amet sollicitudin urna. Nullam sed pretium augue, tincidunt venenatis ante. Duis semper eros ipsum, et euismod turpis sollicitudin eget. In vulputate, justo quis eleifend mattis, nulla eros congue lectus, eu interdum nulla risus et sapien. Cras sed ipsum dui.</p>
+
+        <p>Vivamus sed varius nisi. Praesent semper libero vitae ex vehicula porta. Nam sodales non mi quis faucibus. Etiam fermentum ac elit sit amet rutrum. Quisque laoreet, lacus at sodales tincidunt, velit ante sagittis nulla, egestas iaculis velit risus accumsan mauris. Ut a ligula sed quam mollis sodales. Donec non dictum orci, ut rhoncus ipsum.</p>
+
+        <p>Maecenas mollis tortor ipsum, in finibus turpis consequat at. Nam sollicitudin a libero sit amet venenatis. Nullam ut tortor augue. Maecenas sit amet venenatis ipsum. Etiam congue tristique dolor, non viverra diam varius volutpat. Cras porttitor ullamcorper nunc, eget tempus ipsum dignissim ac. In vel elit eu mauris accumsan facilisis. Praesent eget arcu maximus, ullamcorper felis pretium, rutrum orci. Sed ac egestas magna. Duis eleifend vulputate magna in luctus. Sed eu facilisis augue, quis fermentum arcu.</p>
+
+        <p>Sed a orci at ante venenatis blandit sed quis ligula. Cras sodales vel turpis sed malesuada. Nunc vel nisl lorem. Aliquam sit amet enim maximus orci varius condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras blandit erat quis eros pulvinar, id porta nunc pretium. Curabitur mollis urna ante, pellentesque vulputate ex congue id. Nullam cursus orci sed pellentesque luctus. In hac habitasse platea dictumst. Mauris rhoncus, justo in congue lacinia, ipsum turpis lacinia tortor, vel ullamcorper lacus ligula et mauris. Pellentesque quis pellentesque elit. Sed rutrum sodales aliquet. In sit amet nunc augue. Etiam fermentum posuere dui ac finibus.</p>
+        </div>
         <div id="topofscroll" class="main-inner">
             <div class="drawer-toggles d-flex">
                 {{#courseindex}}
@@ -168,36 +136,29 @@ Example context (json):
                 </div>
             </div>
         </div>
+
         <div class="myFooter">
             <div class="myFooter_wrp">
                 <div class="footer_logo">
-                    <img src="{{{logofooter}}}" class="logo">
+                    <img src="{{{imagegirlpower}}}" class="logo">
                 </div>
                 <div class="footer_menu1">
                     <div class="footer-menu">
-                        <h3>{{#str}} footer_titleMenu1, theme_fosbrazil {{/str}}</h3>
+                        <h3>MAIN MENU</h3>
                         <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/local/staticpage/view.php?page=contact">Contact</a></li>
-                        <li><a href="/local/staticpage/view.php?page=about">About Us</a></li>
+                        <li><a href="https://cameroon.moodle.solidlines.io">Home</a></li>
+                        <li><a href="https://cameroon.moodle.solidlines.io/local/staticpage/view.php?page=contact">Contact</a></li>
+                        <li><a href="https://cameroon.moodle.solidlines.io/local/staticpage/view.php?page=about">About Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer_menu2">
                     <div class="footer-menu">
-                        <h3>{{#str}} footer_titleMenu2, theme_fosbrazil {{/str}}</h3>
+                        <h3>USEFUL LINKS</h3>
                         <ul>
-                        <li><a href="/local/staticpage/view.php?page=privacy_policy">Privacy Policy</a></li>
-                        <li><a href="/local/staticpage/view.php?page=privacy_policy">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="psi_esw">
-                    <div class="footer-menu">
-                        <h5>{{#str}} footer_orgData, theme_fosbrazil {{/str}}</h5>
-                        <ul>
-                            <li>{{#str}} footer_contactNumberLb, theme_fosbrazil {{/str}} <a href="tel:+26824049847">+xxx xxx xxx</a> | <a href="tel:+26824049817">+xxx xxx xxx</a></li>
-                            <li>Web: <a href="http://psi.sz/">psi.sz</a> | FB:  <a href="https://www.facebook.com/psicameroon/">Population Services International, FOS Feministaa</a> | Twitter: <a href="https://twitter.com/PSIFOS Feministaa">@PSIFOS Feministaa</a> |LinkedIn : <a href="https://sz.linkedin.com/company/population-services-international-cameroon">Population services International FOS Feministaa</a> | Instagram: <a href="https://www.instagram.com/psicameroon/">@psicameroon</a></li>
+                        <li><a href="https://cameroon.moodle.solidlines.io/local/staticpage/view.php?page=privacy_policy">Privacy Policy</a></li>
+                        <li><a href="https://cameroon.moodle.solidlines.io/local/staticpage/view.php?page=privacy_policy">Terms </a></li>
+                        <li><a href="#">Service status</a></li>
                         </ul>
                     </div>
                 </div>
@@ -206,18 +167,17 @@ Example context (json):
                 </div>
             </div>
         </div>
-        
+        {{> theme_boost/footer }}
     </div>
     {{{ output.standard_after_main_region_html }}}
 </div>
 
 </body>
-
 </html>
 {{#js}}
 M.util.js_pending('theme_boost/loader');
 require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
-Drawer.init();
-M.util.js_complete('theme_boost/loader');
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
 });
 {{/js}}
