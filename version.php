@@ -17,7 +17,7 @@
  * along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
  *
  * @package    theme_child_fos_brazil
- * @copyright  2024 Your Name
+ * @copyright  2024 digitalMood
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 // Plugin version information.
-$plugin->version   = 2024101400; // YYYYMMDDXX
-$plugin->requires  = 2023101800; // Minimum Moodle version (update accordingly)
+$plugin->version   = '2024101400'; // YYYYMMDDXX
+$plugin->requires  = '2016070700'; // Minimum Moodle version (update accordingly)20240212
 $plugin->component = 'theme_child_fos_brazil';
 
 // List of dependencies with their minimum required versions.
@@ -37,24 +37,3 @@ $plugin->dependencies = [
 // Optional: Define plugin maturity and release version.
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release   = '1.0.0';
-
-
-// Every file should have GPL and copyright in the header - we skip it in tutorials but you should not skip it for real.
-
-// This line protects the file from being accessed by a URL directly.
-defined('MOODLE_INTERNAL') || die();
-
-// This is the version of the plugin.
-$plugin->version = '2016102100';
-
-// This is the version of Moodle this plugin requires.
-$plugin->requires = '2016070700';
-
-// This is the component name of the plugin - it always starts with 'theme_'
-// for themes and should be the same as the name of the folder.
-$plugin->component = 'theme_child_fos_brazil';
-
-// This is a list of plugins, this plugin depends on (and their versions).
-$plugin->dependencies = [
-    'theme_boost' => '2016102100'
-];
