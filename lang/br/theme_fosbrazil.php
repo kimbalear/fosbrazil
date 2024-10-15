@@ -5,67 +5,47 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = "Le thème fosbrazil est un thème enfant de Boost. Il ajoute la possibilité de télécharger des photos d'arrière-plan.";
+$string['choosereadme'] = 'El tema Circuitos é um tema filho do Boost. Ele adiciona a capacidade de fazer upload de fotos de fundo.';
 // The name of our plugin.
-$string['pluginname'] = "FOS Feminista";
+$string['pluginname'] = 'Circuitos;
 // We need to include a lang string for each block region.
-$string['region-side-pre'] = 'Droit';
+$string['region-side-pre'] = 'Direita';
 // The name of the second tab in the theme settings.
-$string['advancedsettings'] = 'Réglages avancés';
+$string['advancedsettings'] = 'Configurações avançadas';
 // The brand colour setting.
-$string['brandcolor'] = 'Couleur de la marque';
+$string['brandcolor'] = 'Cor da marca';
 // The brand colour setting description.
-$string['brandcolor_desc'] = 'La couleur d’accent.';
+$string['brandcolor_desc'] = 'A cor de destaque.';
 // Name of the settings pages.
-$string['configtitle'] = 'Paramètres de fosbrazil';
+$string['configtitle'] = 'Circuitos Configurações';
 // Name of the first settings tab.
-$string['generalsettings'] = 'Réglages généraux';
+$string['generalsettings'] = 'Configurações gerais';
 // Preset files setting.
-$string['presetfiles'] = 'Fichiers prédéfinis de thème supplémentaires';
+$string['presetfiles'] = 'Arquivos de predefinição de tema adicionais';
 // Preset files help text.
-$string['presetfiles_desc'] = "Les fichiers prédéfinis peuvent être utilisés pour modifier considérablement l'apparence du thème. Voir <a href=https://docs.moodle.org/dev/Boost_Presets>Boostez les préréglages</a> pour plus d'informations sur la création et le partage de vos propres fichiers prédéfinis, et consultez le <a href=http://moodle.net/boost>Référentiel de préréglages</a> pour les préréglages que d’autres ont partagés.";
+$string['presetfiles_desc'] = 'Os arquivos de predefinição podem ser usados para alterar drasticamente a aparência do tema. Consulte a <a href=https://docs.moodle.org/dev/Boost_Presets>documentação do Boost Presets</a> para obter informações sobre como criar e compartilhar seus próprios arquivos de predefinição, e veja o <a href=http://moodle.net/boost>repositório de predefinições</a> para predefinições que outras pessoas compartilharam.';
 // Preset setting.
-$string['preset'] = "Thème prédéfini";
+$string['preset'] = 'Predefinição de tema';
 // Preset help text.
-$string['preset_desc'] = "Choisissez un préréglage pour modifier considérablement l’apparence du thème.";
+$string['preset_desc'] = 'Escolha uma predefinição para alterar amplamente a aparência do tema.';
 // Raw SCSS setting.
-$string['rawscss'] = 'SCSS brut';
+$string['rawscss'] = 'Raw SCSS';
 // Raw SCSS setting help text.
-$string['rawscss_desc'] = 'Utilisez ce champ pour fournir le code SCSS ou CSS qui sera injecté à la fin de la feuille de style.';
+$string['rawscss_desc'] = 'Use este campo para fornecer código SCSS ou CSS que será injetado no final da folha de estilo.';
 // Raw initial SCSS setting.
-$string['rawscsspre'] = 'SCSS initial brut';
+$string['rawscsspre'] = 'Raw Inicial SCSS';
 // Raw initial SCSS setting help text.
-$string['rawscsspre_desc'] = "Dans ce champ vous pouvez fournir le code SCSS d'initialisation, il sera injecté avant tout. La plupart du temps, vous utiliserez ce paramètre pour définir des variables.";
-
-// home
-$string['home_slid1_title'] = 'Connaissances de qualité';
-$string['home_slid1_subTitle'] = 'pour de meilleurs soins de santé';
-
-$string['home_slid2_title'] = 'Une approche durable et coordonnée';
-$string['home_slid2_subTitle'] = 'au renforcement des capacités à distance';
-
-$string['home_slid3_title'] = 'Durable et coordonné';
-$string['home_slid3_subTitle'] = 'approche du renforcement des capacités à distance';
-
-$string['home_slid4_title'] = 'Lorem ipsum dolor sit amet';
-$string['home_slid4_subTitle'] = 'Nullam bibendum est ex, nec commodo nibh';
-
-$string['home_slid5_title'] = 'Quality knowledge for better health care';
-$string['home_slid5_subTitle'] = 'Nullam bibendum est ex, nec commodo nibh';
+$string['rawscsspre_desc'] = 'Neste campo, você pode fornecer código SCSS de inicialização, que será injetado antes de qualquer outra coisa. Na maioria das vezes, você usará esta configuração para definir variáveis.';
 
 // Footer
 
-$string['footer_titleMenu1'] = 'Pages';
-$string['footer_menu1Item1'] = 'Home';
-$string['footer_menu1Item2'] = 'Contact';
-$string['footer_menu1Item3'] = 'À propos';
+$string['footer_menu1Item1'] = 'Política de Privacidade';
+$string['footer_menu1Item2'] = 'Sobre o Circuitos';
+$string['footer_menu1Item3'] = 'Contacto';
 
-$string['footer_titleMenu2'] = 'LIENS UTILES';
-$string['footer_menu1Item1'] = 'Politique de confidentialité';
-$string['footer_menu1Item3'] = 'Termes';
 
-$string['footer_orgData'] = 'POPULATION SERVICES INTERNATIONAL FOS fEMINISTA | ??? | ???';
-$string['footer_contactNumberLb'] = 'Appel:';
+$string['footer_orgData'] = 'POPULATION SERVICES INTERNATIONAL FOS FEMINISTA';
+$string['footer_contactNumberLb'] = 'Call:';
 
 $string['footer_links'] = '';
 $string['footer_CPRS'] = '';

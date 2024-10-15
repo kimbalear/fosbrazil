@@ -5,9 +5,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme fosbrazil is a child theme of Boost. It adds the ability to upload background photos.';
+$string['choosereadme'] = 'Theme Circuitos is a child theme of Boost. It adds the ability to upload background photos.';
 // The name of our plugin.
-$string['pluginname'] = 'FOS Feminista';
+$string['pluginname'] = 'Circuitos';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Right';
 // The name of the second tab in the theme settings.
@@ -17,7 +17,7 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
 // Name of the settings pages.
-$string['configtitle'] = 'fosbrazil settings';
+$string['configtitle'] = 'Circuitos settings';
 // Name of the first settings tab.
 $string['generalsettings'] = 'General settings';
 // Preset files setting.
@@ -55,14 +55,9 @@ $string['home_slid5_subTitle'] = 'Nullam bibendum est ex, nec commodo nibh';
 
 // Footer
 
-$string['footer_titleMenu1'] = 'Pages';
-$string['footer_menu1Item1'] = 'Home';
-$string['footer_menu1Item2'] = 'Contact';
-$string['footer_menu1Item3'] = 'About';
-
-$string['footer_titleMenu2'] = 'USEFUL LINKS';
 $string['footer_menu1Item1'] = 'Privacy Policy';
-$string['footer_menu1Item3'] = 'Terms';
+$string['footer_menu1Item2'] = 'About'; 
+
 
 $string['footer_orgData'] = 'POPULATION SERVICES INTERNATIONAL FOS fEMINISTA | PSI FIRST FLOOR, MBHILIBHI HOUSE, CNR MBHILIBHI & TSEKWANE STREET, MBABANE | P O BOX 170, EVENI, H103';
 $string['footer_contactNumberLb'] = 'Call:';
