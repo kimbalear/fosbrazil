@@ -6,7 +6,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 // We will add callbacks here as we add features to our theme.
-function theme_child_fos_brazil_get_main_scss_content($theme) {
+function theme_fosbrazil_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -21,24 +21,24 @@ function theme_child_fos_brazil_get_main_scss_content($theme) {
         // We still load the default preset files directly from the boost theme. No sense in duplicating them.
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
 
-    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_child_fos_brazil', 'preset', 0, '/', $filename))) {
-        // This preset file was fetched from the file area for theme_child_fos_brazil and not theme_boost (see the line above).
+    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_fosbrazil', 'preset', 0, '/', $filename))) {
+        // This preset file was fetched from the file area for theme_fosbrazil and not theme_boost (see the line above).
         $scss .= $presetfile->get_content();
     } else {
         // Safety fallback - maybe new installs etc.
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');
     }
     // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.
-    $pre = file_get_contents($CFG->dirroot . '/theme/child_fos_brazil/scss/pre.scss');
+    $pre = file_get_contents($CFG->dirroot . '/theme/fosbrazil/scss/pre.scss');
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.
-    $post = file_get_contents($CFG->dirroot . '/theme/child_fos_brazil/scss/post.scss');
+    $post = file_get_contents($CFG->dirroot . '/theme/fosbrazil/scss/post.scss');
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
 }
 
-function child_fos_brazil_extend_navigation(global_navigation $navigation) {
-    $url_contact = new moodle_url('/theme/child_fos_brazil/pages/contact.php');
-    $url_about = new moodle_url('/theme/child_fos_brazil/pages/about.php');
+function fosbrazil_extend_navigation(global_navigation $navigation) {
+    $url_contact = new moodle_url('/theme/fosbrazil/pages/contact.php');
+    $url_about = new moodle_url('/theme/fosbrazil/pages/about.php');
     
     $node_contact = navigation_node::create('Página contact', $url_contact, navigation_node::NODETYPE_LEAF, null, 'contact');
     $node_about = navigation_node::create('Página about', $url_about, navigation_node::NODETYPE_LEAF, null, 'about');

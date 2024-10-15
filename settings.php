@@ -10,22 +10,22 @@ defined('MOODLE_INTERNAL') || die();
 if ($ADMIN->fulltree) {
 
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.
-    $settings = new theme_boost_admin_settingspage_tabs('themesettingchild_fos_brazil', get_string('configtitle', 'theme_child_fos_brazil'));
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingfosbrazil', get_string('configtitle', 'theme_fosbrazil'));
 
     // Each page is a tab - the first is the "General" tab.
-    $page = new admin_settingpage('theme_child_fos_brazil_general', get_string('generalsettings', 'theme_child_fos_brazil'));
+    $page = new admin_settingpage('theme_fosbrazil_general', get_string('generalsettings', 'theme_fosbrazil'));
 
     // Replicate the preset setting from boost.
-    $name = 'theme_child_fos_brazil/preset';
-    $title = get_string('preset', 'theme_child_fos_brazil');
-    $description = get_string('preset_desc', 'theme_child_fos_brazil');
+    $name = 'theme_fosbrazil/preset';
+    $title = get_string('preset', 'theme_fosbrazil');
+    $description = get_string('preset_desc', 'theme_fosbrazil');
     $default = 'default.scss';
 
     // We list files in our own file area to add to the drop down. We will provide our own function to
     // load all the presets from the correct paths.
     $context = context_system::instance();
     $fs = get_file_storage();
-    $files = $fs->get_area_files($context->id, 'theme_child_fos_brazil', 'preset', 0, 'itemid, filepath, filename', false);
+    $files = $fs->get_area_files($context->id, 'theme_fosbrazil', 'preset', 0, 'itemid, filepath, filename', false);
 
     $choices = [];
     foreach ($files as $file) {
@@ -40,9 +40,9 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     // Preset files setting.
-    $name = 'theme_child_fos_brazil/presetfiles';
-    $title = get_string('presetfiles','theme_child_fos_brazil');
-    $description = get_string('presetfiles_desc', 'theme_child_fos_brazil');
+    $name = 'theme_fosbrazil/presetfiles';
+    $title = get_string('presetfiles','theme_fosbrazil');
+    $description = get_string('presetfiles_desc', 'theme_fosbrazil');
 
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
                                                   array('maxfiles' => 20, 'accepted_types' => array('.scss')));
@@ -50,9 +50,9 @@ if ($ADMIN->fulltree) {
 
     // Variable $brand-color.
     // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_child_fos_brazil/brandcolor';
-    $title = get_string('brandcolor', 'theme_child_fos_brazil');
-    $description = get_string('brandcolor_desc', 'theme_child_fos_brazil');
+    $name = 'theme_fosbrazil/brandcolor';
+    $title = get_string('brandcolor', 'theme_fosbrazil');
+    $description = get_string('brandcolor_desc', 'theme_fosbrazil');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -61,17 +61,17 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Advanced settings.
-    $page = new admin_settingpage('theme_child_fos_brazil_advanced', get_string('advancedsettings', 'theme_child_fos_brazil'));
+    $page = new admin_settingpage('theme_fosbrazil_advanced', get_string('advancedsettings', 'theme_fosbrazil'));
 
     // Raw SCSS to include before the content.
-    $setting = new admin_setting_configtextarea('theme_child_fos_brazil/scsspre',
-                                                get_string('rawscsspre', 'theme_child_fos_brazil'), get_string('rawscsspre_desc', 'theme_child_fos_brazil'), '', PARAM_RAW);
+    $setting = new admin_setting_configtextarea('theme_fosbrazil/scsspre',
+                                                get_string('rawscsspre', 'theme_fosbrazil'), get_string('rawscsspre_desc', 'theme_fosbrazil'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Raw SCSS to include after the content.
-    $setting = new admin_setting_configtextarea('theme_child_fos_brazil/scss', get_string('rawscss', 'theme_child_fos_brazil'),
-                                                get_string('rawscss_desc', 'theme_child_fos_brazil'), '', PARAM_RAW);
+    $setting = new admin_setting_configtextarea('theme_fosbrazil/scss', get_string('rawscss', 'theme_fosbrazil'),
+                                                get_string('rawscss_desc', 'theme_fosbrazil'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

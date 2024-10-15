@@ -5,7 +5,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme child_fos_brazil is a child theme of Boost. It adds the ability to upload background photos.';
+$string['choosereadme'] = 'Theme fosbrazil is a child theme of Boost. It adds the ability to upload background photos.';
 // The name of our plugin.
 $string['pluginname'] = 'FOS Feminista';
 // We need to include a lang string for each block region.
@@ -17,7 +17,7 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
 // Name of the settings pages.
-$string['configtitle'] = 'child_fos_brazil settings';
+$string['configtitle'] = 'fosbrazil settings';
 // Name of the first settings tab.
 $string['generalsettings'] = 'General settings';
 // Preset files setting.

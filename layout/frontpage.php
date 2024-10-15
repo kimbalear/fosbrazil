@@ -106,15 +106,15 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'partner1' => $OUTPUT->image_url('brazil_img/Ministryofhealth', 'theme_child_fos_brazil'),
-    'partner2' => $OUTPUT->image_url('brazil_img/psi-cameroon', 'theme_child_fos_brazil'),
-    'partner3' => $OUTPUT->image_url('brazil_img/logo', 'theme_child_fos_brazil'),
-    'logofooter' => $OUTPUT->image_url('brazil_img/logoFooter', 'theme_child_fos_brazil'),
-    'img1' => $OUTPUT->image_url('brazil_img/img1', 'theme_child_fos_brazil'),
-    'img2' => $OUTPUT->image_url('brazil_img/img2', 'theme_child_fos_brazil'),
-    'img3' => $OUTPUT->image_url('brazil_img/img3', 'theme_child_fos_brazil'),
-    'img4' => $OUTPUT->image_url('brazil_img/img4', 'theme_child_fos_brazil'),
-    'img5' => $OUTPUT->image_url('brazil_img/img5', 'theme_child_fos_brazil')
+    'partner1' => $OUTPUT->image_url('brazil_img/Ministryofhealth', 'theme_fosbrazil'),
+    'partner2' => $OUTPUT->image_url('brazil_img/psi-cameroon', 'theme_fosbrazil'),
+    'partner3' => $OUTPUT->image_url('brazil_img/logo', 'theme_fosbrazil'),
+    'logofooter' => $OUTPUT->image_url('brazil_img/logoFooter', 'theme_fosbrazil'),
+    'img1' => $OUTPUT->image_url('brazil_img/img1', 'theme_fosbrazil'),
+    'img2' => $OUTPUT->image_url('brazil_img/img2', 'theme_fosbrazil'),
+    'img3' => $OUTPUT->image_url('brazil_img/img3', 'theme_fosbrazil'),
+    'img4' => $OUTPUT->image_url('brazil_img/img4', 'theme_fosbrazil'),
+    'img5' => $OUTPUT->image_url('brazil_img/img5', 'theme_fosbrazil')
 ];
 
-echo $OUTPUT->render_from_template('theme_child_fos_brazil/frontpage', $templatecontext);
+echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);
