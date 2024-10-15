@@ -1,8 +1,16 @@
+.navbar {
+    background-color: #e49dee; // Cambia el color de fondo del navbar
+}
 
-/*.navbar-expand {
-	.navbar-nav {
-		> li:not(:first-child) {
-			display: none;
-		}
-	}
-}*/
+.navbar .nav-link {
+    color: #830f0f; // Cambia el color de los enlaces del navbar
+}
+
+.navbar .nav-link:hover {
+    color: #00ff40; // Cambia el color al hacer hover
+}
+
+.navbar .nav-link.active {
+    font-weight: bold; // Cambia el estilo del enlace activo
+    color: #FFA500; // Color para el enlace activo
+}

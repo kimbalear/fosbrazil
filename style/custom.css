@@ -806,13 +806,28 @@ h6 {
   font-size: 0.9em;
 }
 
-/*.navbar-expand {
-	.navbar-nav {
-		> li:not(:first-child) {
-			display: none;
-		}
-	}
-}*/
+.navbar {
+  background-color: #e49dee;
+}
+
+.navbar .nav-link {
+  color: #830f0f;
+}
+
+.navbar .nav-link:hover {
+  color: #00ff40;
+}
+
+.navbar .nav-link.active {
+  font-weight: bold;
+  color: #FFA500;
+}
+
+#page-header {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
