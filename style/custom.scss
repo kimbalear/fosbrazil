@@ -96,8 +96,8 @@ $warning-outline: $R1_10;
 @import "layouts/frontpage.scss", "layouts/login.scss";
 
 @import "components/footer.scss", "components/card.scss", "components/con_img.scss",
-  "components/cont_icon_frs.scss", "components/smpl_card.scss",
-  "components/navbar.scss", "components/page_header.scss", "components/moremenu";
+  "components/cont_icon_frs.scss", "components/smpl_card.scss", "components/card_body.scss",
+  "components/navbar.scss", "components/page_header.scss", "components/moremenu", "components/page_footer.scss";
 
 body {
   font-family: "Open Sans", sans-serif;

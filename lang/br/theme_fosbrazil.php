@@ -7,7 +7,7 @@ defined('MOODLE_INTERNAL') || die();
 // A description shown in the admin theme selector.
 $string['choosereadme'] = 'El tema Circuitos é um tema filho do Boost. Ele adiciona a capacidade de fazer upload de fotos de fundo.';
 // The name of our plugin.
-$string['pluginname'] = 'Circuitos;
+$string['pluginname'] = 'Circuitos';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Direita';
 // The name of the second tab in the theme settings.

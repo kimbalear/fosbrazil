@@ -105,7 +105,7 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'logofooter' => $OUTPUT->image_url('brazil_img/logoFooter', 'theme_fosbrazil')
+    'logofooter' => $OUTPUT->image_url('logo/logo-secundary-dark', 'theme_fosbrazil')
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/drawers', $templatecontext);
