@@ -14,10 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * A secure layout for the boost theme.
+ *
+ * @package   theme_boost
+ * @copyright 2016 Damyon Wiese
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2024101500;  // YYYYMMDDXX format for versioning.
-$plugin->requires = 2020061500;  // Moodle version required (3.9 or later).
-$plugin->component = 'theme_fosbrazil';  // Full name of the plugin (used for diagnostics).
-$plugin->maturity = MATURITY_STABLE;  // This is considered as stable version.
-$plugin->release = '1.0.0';  // This is the version of your plugin.
+$blockshtml = $OUTPUT->blocks('side-pre');
+$hasblocks = strpos($blockshtml, 'data-block=') !== false;
+$bodyattributes = $OUTPUT->body_attributes();
+
+$templatecontext = [
+    'sitename' => '', /*format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),*/
+    'output' => $OUTPUT,
+    'bodyattributes' => $bodyattributes,
+    'sidepreblocks' => $blockshtml,
+    'hasblocks' => $hasblocks
+];
+
+echo $OUTPUT->render_from_template('theme_boost/secure', $templatecontext);
+

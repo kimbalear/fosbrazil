@@ -1,0 +1,46 @@
+.navbar {
+    background-color: white!important;
+}
+
+.navbar .nav-link {
+    color: $G1_00!important;
+    font-weight: 400!important;
+}
+
+.navbar .nav-link:hover {
+    color: $G1_00!important;
+    background-color: $G2_80!important;
+}
+
+.navbar .nav-link.active {
+    color: $G1_00!important;
+    font-weight: 600!important;
+    border-bottom-color: $G1_00!important;
+}
+
+// .moremenu
+
+.moremenu {
+    background-color: white!important;
+}
+
+.moremenu .nav-link {
+    color: $G1_00!important;
+    font-weight: 400!important;
+}
+
+.moremenu .nav-link:hover {
+    color: $G1_00!important;
+    background-color: $G1_80!important;
+}
+
+.moremenu .nav-link.active {
+    color: $G1_00!important;
+    font-weight: 600!important;
+    border-bottom-color: $G1_00!important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: $G1_20!important;
+    color: white!important;
+}
