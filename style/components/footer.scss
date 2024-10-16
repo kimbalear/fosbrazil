@@ -41,7 +41,7 @@
 
     .footer_menu1 {
       grid-area: footer_menu1;
-      color: $mav_primary;
+      color: $primary;
 
       @include media_580 {
         justify-self: center;
@@ -54,7 +54,7 @@
 
     .footer_menu2 {
       grid-area: footer_menu2;
-      color: $mav_primary;
+      color: $primary;
 
       @include media_580 {
         justify-self: center;
@@ -67,7 +67,7 @@
 
     .psi_esw {
       grid-area: psi_esw;
-      color: $mav_primary;
+      color: $primary;
 
       @include media_580 {
         justify-self: center;
@@ -92,7 +92,7 @@
           line-height: 32px;
 
           a {
-            color: $mav_primary;
+            color: $primary;
             text-decoration: none;
 
             &:hover {
@@ -110,7 +110,7 @@
 
       p {
         text-align: center;
-        color: $mav_primary;
+        color: $primary;
         font-size: small;
         line-height: 2em;
         padding: 0;
