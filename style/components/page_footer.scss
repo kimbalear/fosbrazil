@@ -1,7 +1,7 @@
 .btn-footer-popover {
   background-color: $G1_00 !important;
   color: white;
-  &:hover {
+  &:hover, &:focus, &:active {
     color: $G1_00 !important;
     background-color: $G1_40 !important;
   }

@@ -106,7 +106,8 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'logofooter' => $OUTPUT->image_url('logo/logo_secundary_dark', 'theme_fosbrazil')
+    'logofooter' => $OUTPUT->image_url('logo/logo_secundary_dark', 'theme_fosbrazil'),
+    'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil')
 ];
 
 echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);

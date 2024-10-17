@@ -156,6 +156,9 @@ Example context (json):
             </div>
         </div>
         <div class="myfooter">
+            <div class="grap_dsgn_footer">
+                <img src="{{{grap_dsgn_footer}}}" class="grap_dsgn">
+            </div>
             <div class="content">
                 <div class="nav_content">
                 <div class="item1"><a href="#">{{#str}} footer_menu1Item1, theme_fosbrazil {{/str}}</a></div>
@@ -163,7 +166,7 @@ Example context (json):
                 <div class="item3"><a href="#">{{#str}} footer_menu1Item3, theme_fosbrazil {{/str}}</a></div>
                 <div class="logo_c"><img src="{{{logofooter}}}" class="logo"></div>
                 </div>
-                <div class="copyright"><p>{{#str}} footer_copyright, theme_fosbrazil {{/str}}</p></div>
+                <div class="copyright"><div>{{#str}} footer_copyright, theme_fosbrazil {{/str}}</div></div>
             </div>
         </div>
         {{> theme_boost/footer }}

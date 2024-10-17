@@ -1,142 +1,19 @@
-/*
-.myFooter {
+.myfooter {
   width: 100%;
   height: auto;
-  padding: 8px;
-  background-color: #f7f7f777;
 
-  .myFooter_wrp {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 1fr repeat(2, auto);
-    gap: 8px 8px;
-    grid-auto-flow: row;
-    max-width: 814px;
-    margin: 0 auto;
-    grid-template-areas:
-      "footer_logo footer_menu1 footer_menu2"
-      "psi_esw psi_esw psi_esw"
-      "footer_cr footer_cr footer_cr";
+  .grap_dsgn_footer {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
 
-    @include media_580 {
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: auto;
-      grid-template-areas:
-        "footer_logo footer_logo"
-        "footer_menu1 footer_menu2"
-        "psi_esw psi_esw psi_esw"
-        "footer_cr footer_cr";
-    }
-
-    .footer_logo {
-      justify-self: center;
-      align-self: start;
-      grid-area: footer_logo;
-
-      .logo {
-        margin-top: 1em;
-        width: auto;
-        height: 132px;
-      }
-    }
-
-    .footer_menu1 {
-      grid-area: footer_menu1;
-      color: $primary;
-
-      @include media_580 {
-        justify-self: center;
-      }
-      h3,
-      h5 {
-        text-transform: uppercase;
-      }
-    }
-
-    .footer_menu2 {
-      grid-area: footer_menu2;
-      color: $primary;
-
-      @include media_580 {
-        justify-self: center;
-      }
-      h3,
-      h5 {
-        text-transform: uppercase;
-      }
-    }
-
-    .psi_esw {
-      grid-area: psi_esw;
-      color: $primary;
-
-      @include media_580 {
-        justify-self: center;
-      }
-    }
-
-    .footer_menu1,
-    .footer_menu2,
-    .psi_esw {
-      h3,
-      h5 {
-        margin-bottom: 12px;
-        font-size: 1em;
-        font-weight: 500;
-      }
-
-      ul {
-        padding-left: 0;
-        list-style: none;
-
-        li {
-          line-height: 32px;
-
-          a {
-            color: $primary;
-            text-decoration: none;
-
-            &:hover {
-              color: #0f6cbf;
-            }
-          }
-        }
-      }
-    }
-
-    .footer_cr {
-      align-self: center;
-      grid-area: footer_cr;
-      border-top: 1px solid #d8d8d8;
-
-      p {
-        text-align: center;
-        color: $primary;
-        font-size: small;
-        line-height: 2em;
-        padding: 0;
-        margin: 0;
-        color: #686868;
-      }
+    .grap_dsgn {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
     }
   }
-}
-*/
-
-.myfooter {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "content";
-  padding-top: 50px;
-  /* Usar la imagen desde pix/graphic_design */
-  background-image: url("{{#pix}}graphic_design/graf_1, theme_fosbrazil{{/pix}}");
-  background-position: top center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 
   .content {
     display: grid;
@@ -147,8 +24,7 @@
     grid-template-areas:
       "nav_content"
       "copyright";
-    grid-area: content;
-    padding: 75px 0;
+    padding: 75px 0 0 0;
     background-color: $D1_00;
 
     .nav_content {
@@ -159,13 +35,14 @@
       grid-auto-flow: row;
       grid-template-areas: "item1 item2 item3 logo_c";
       grid-area: nav_content;
+      padding: 0 0 75px 0;
 
       a {
         color: $D1_90;
-    
+
         &:hover {
           color: $G3_30;
-          text-decoration: none; 
+          text-decoration: none;
         }
       }
 
@@ -191,15 +68,21 @@
         grid-area: logo_c;
         justify-self: center;
         align-self: center;
+        padding: 0 26px;
       }
     }
     .copyright {
       grid-area: copyright;
       background-color: $D1_50;
-      justify-self: center;
-      align-self: center;
       color: white;
-      font-size: 0.9em;
+      font-size: 0.8em;
+      font-weight: 300;
+      div {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 2rem;
+      }
     }
   }
 }
