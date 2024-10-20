@@ -94,6 +94,16 @@ $info-outline: $G3_40;
 $warning-outline: $R1_10;
 
 $brand-color: $G1_00;
+$brand-primary: $G1_00;
 
 $brand-color-light: lighten($brand-color, 20%);
 $brand-color-dark: darken($brand-color, 20%);
+
+$activity-icon-colors: (
+     "administration": #5D63F6,
+     "assessment": #11A676,
+     "collaboration": #EB66A2,
+     "communication": #F7634D,
+     "content": #399BE2,
+     "interface": #A378FF
+ );

@@ -42,7 +42,7 @@
         padding: 0;
         justify-content: center;
 
-        @include media_515 {
+        @include brk515 {
             width: 70%;
             grid-template-columns: repeat(auto-fit, 50%);
         }

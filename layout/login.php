@@ -32,7 +32,8 @@ $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
     'bodyattributes' => $bodyattributes,
-    'imagbk' => $OUTPUT->image_url('brazil_img/imageLogin', 'theme_fosbrazil')
+    'nao_e_nao' => $OUTPUT->image_url('logo/nao_e_nao', 'theme_fosbrazil'),
+    'graf_bg1' => $OUTPUT->image_url('graphic_design/graf_bg1', 'theme_fosbrazil')
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/login', $templatecontext);
