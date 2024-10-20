@@ -23,56 +23,88 @@
     grid-auto-flow: row;
     grid-template-areas:
       "nav_content"
-      "copyright";
+      "copy_right";
     padding: 75px 0 0 0;
     background-color: $D1_00;
 
     .nav_content {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr auto;
+      grid-template-columns: 1fr auto;
       grid-template-rows: 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
-      grid-template-areas: "item1 item2 item3 logo_c";
+      //grid-template-areas: "item1 item2 item3 logo_c";
+      grid-template-areas: "nav_items logo_c";
       grid-area: nav_content;
       padding: 0 0 75px 0;
 
-      a {
-        color: $D1_90;
+      .nav_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "item1 item2 item3";
+        grid-area: nav_items;
 
-        &:hover {
-          color: $G3_30;
-          text-decoration: none;
+        a {
+          color: $D1_90;
+
+          &:hover {
+            color: $G3_30;
+            text-decoration: none;
+          }
         }
-      }
 
-      .item1 {
-        grid-area: item1;
-        justify-self: center;
-        align-self: center;
-      }
+        .item1, .item2, .item3 {
+          border: 0px;
+          padding: 21px;
+        }
 
-      .item2 {
-        grid-area: item2;
-        justify-self: center;
-        align-self: center;
-      }
+        .item1 {
+          grid-area: item1;
+          border-right: 1px solid white;
+        }
 
-      .item3 {
-        grid-area: item3;
-        justify-self: center;
-        align-self: center;
+        .item2 {
+          grid-area: item2;
+          border-right: 1px solid white;
+        }
+
+        .item3 {
+          grid-area: item3;
+        }
       }
 
       .logo_c {
         grid-area: logo_c;
-        justify-self: center;
-        align-self: center;
-        padding: 0 26px;
+        .logo_c {
+          grid-area: logo_c;
+          padding-top: 21px;
+        }
+      }
+
+      @include brk475 {
+        .nav_items {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas: 
+          "item1"
+          "item2"
+          "item3";
+
+          .item1, .item2, .item3 {
+            border: 0px;
+          }
+
+          .item2 {
+            border-top: 1px Solid white;
+            border-bottom: 1px Solid white;
+          }
+        }
       }
     }
-    .copyright {
-      grid-area: copyright;
+    .copy_right {
+      grid-area: copy_right;
       background-color: $D1_50;
       color: white;
       font-size: 0.8em;
@@ -84,5 +116,30 @@
         line-height: 2rem;
       }
     }
+
+    @include brk821 {
+      .nav_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "logo_c"
+          "nav_items";
+
+        .logo_c {
+          .item_cnt {
+            img {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
   }
+}
+
+.item_cnt {
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0 26px;
 }
