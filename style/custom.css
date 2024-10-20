@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 h1 {
   color: #386641 !important;
@@ -801,6 +802,38 @@ button.close:focus,
 
 .page-context-header {
   margin-left: 21px !important;
+}
+
+/* Scrollbar personalizado para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+  height: 8px; /* Altura del scrollbar horizontal, si se usa */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color del pulgar de la scrollbar */
+  border-radius: 10px; /* Borde redondeado para estilo más suave */
+  border: 2px solid transparent; /* Borde para crear espacio alrededor del pulgar */
+  background-clip: content-box; /* Asegura que el color solo esté en el área visible */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Color del pulgar cuando se pasa el mouse por encima */
+}
+
+/* Scrollbar personalizado para Firefox */
+* {
+  scrollbar-width: thin; /* Define un scrollbar más delgado */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color del pulgar y la pista */
+}
+
+/* Scrollbar en hover para Firefox */
+*::-webkit-scrollbar-thumb:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Cambia el color del pulgar al pasar el mouse */
 }
 
 /*# sourceMappingURL=custom.css.map */
