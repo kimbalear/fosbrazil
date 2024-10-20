@@ -23,16 +23,6 @@
     width: 100%;
   }
 
-  @include brk440 {
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    width: 100%;
-  }
-
   .graf_bg {
     position: absolute;
     top: 0;
@@ -55,6 +45,16 @@
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: $shadow;
+
+  @include brk440 {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: start;
+    max-width: none;
+    height: 100%;
+    width: 100%;
+  }
 
   .login-logo {
     display: flex;
@@ -188,12 +188,55 @@
       background: #555;
     }
   }
+
+  .page_wrapper_login {
+    @include brk767-98 {
+      max-width: none !important;
+      max-height: none !important;
+      display: block !important;
+    }
+  }
+
+  // new account
+
+  .form-group {
+    width: 100%;
+    span {
+      width: 100%;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
-.page_wrapper_login {
-  @include brk767-98 {
-    max-width: none !important;
-    max-height: none !important;
-    display: block;
-  }
+.mform.full-width-labels .fitem.row {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna */
+  width: 100%; /* Asegúrate de que el ancho sea el 100% */
+}
+
+.mform.full-width-labels .fitem.row > .col-md-3 {
+  width: 100%; /* Hace que la etiqueta ocupe todo el ancho */
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%; /* Asegura que no haya límite de ancho */
+}
+
+.mform.full-width-labels .fitem.row > .col-md-9 {
+  width: 100%; /* Hace que el input ocupe todo el ancho */
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%; /* Asegura que no haya límite de ancho */
+}
+
+.mform.full-width-labels .form-label-addon {
+  position: absolute; /* Posiciona el icono de advertencia sobre la misma línea */
+  right: 0; /* Alinea el icono a la derecha */
+  top: 0; /* Alinea el icono al nivel superior de la etiqueta */
+  padding: 5px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+.mform.full-width-labels .text-danger {
+  margin-left: 5px; /* Ajusta el margen para mantener el icono separado del texto */
 }

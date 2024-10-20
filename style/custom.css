@@ -132,17 +132,6 @@ h6 {
 .login_page #loginbtn {
   width: 100%;
 }
-@media only screen and (max-width: 440px) {
-  .login_page {
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    width: 100%;
-  }
-}
 .login_page .graf_bg {
   position: absolute;
   top: 0;
@@ -164,6 +153,17 @@ h6 {
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+@media only screen and (max-width: 440px) {
+  .lg_cnt {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: start;
+    max-width: none;
+    height: 100%;
+    width: 100%;
+  }
 }
 .lg_cnt .login-logo {
   display: flex;
@@ -261,13 +261,52 @@ h6 {
 .lg_cnt div[role=main]::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 @media only screen and (max-width: 767.98px) {
-  .page_wrapper_login {
+  .lg_cnt .page_wrapper_login {
     max-width: none !important;
     max-height: none !important;
-    display: block;
+    display: block !important;
   }
+}
+.lg_cnt .form-group {
+  width: 100%;
+}
+.lg_cnt .form-group span {
+  width: 100%;
+}
+.lg_cnt .form-group span .btn {
+  width: 100%;
+}
+
+.mform.full-width-labels .fitem.row {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna */
+  width: 100%; /* Asegúrate de que el ancho sea el 100% */
+}
+
+.mform.full-width-labels .fitem.row > .col-md-3 {
+  width: 100%; /* Hace que la etiqueta ocupe todo el ancho */
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%; /* Asegura que no haya límite de ancho */
+}
+
+.mform.full-width-labels .fitem.row > .col-md-9 {
+  width: 100%; /* Hace que el input ocupe todo el ancho */
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%; /* Asegura que no haya límite de ancho */
+}
+
+.mform.full-width-labels .form-label-addon {
+  position: absolute; /* Posiciona el icono de advertencia sobre la misma línea */
+  right: 0; /* Alinea el icono a la derecha */
+  top: 0; /* Alinea el icono al nivel superior de la etiqueta */
+  padding: 5px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+.mform.full-width-labels .text-danger {
+  margin-left: 5px; /* Ajusta el margen para mantener el icono separado del texto */
 }
 
 .myfooter {
