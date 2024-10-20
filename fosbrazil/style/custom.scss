@@ -1,0 +1,128 @@
+@import "abstract/vars.scss";
+@import "abstract/mixins";
+@import "abstract/typography.scss";
+
+@import "layouts/frontpage.scss";
+@import "layouts/login.scss";
+
+@import "components/footer.scss";
+@import "components/card.scss";
+@import "components/con_img.scss";
+@import "components/cont_icon_frs.scss";
+@import "components/smpl_card.scss";
+@import "components/card_body.scss";
+@import "components/navbar.scss";
+@import "components/page_header.scss";
+@import "components/moremenu";
+@import "components/page_footer.scss";
+@import "components/components.scss";
+@import "components/btns.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: $G1_00;
+
+  a {
+    color: $G3_00;
+
+    &:hover {
+      color: $G2_00;
+    }
+  }
+}
+
+.main-inner {
+  padding: 0px !important;
+}
+
+.custom_wrapper {
+  max-width: 788px !important;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+div[role="main"] {
+  padding: 0 16px !important;
+}
+
+.block {
+  max-width: 788px !important;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.aabtn.focus,
+.aabtn:focus,
+.btn-link.focus,
+.btn-link:focus,
+.nav-link.focus,
+.nav-link:focus,
+.editor_atto_toolbar button.focus,
+.editor_atto_toolbar button:focus,
+.editor_atto_toolbar .atto_toolbar_row.focus,
+.editor_atto_toolbar .atto_toolbar_row:focus,
+[role="button"].focus,
+[role="button"]:focus,
+.list-group-item-action.focus,
+.list-group-item-action:focus,
+input[type="checkbox"].focus,
+input[type="checkbox"]:focus,
+input[type="radio"].focus,
+input[type="radio"]:focus,
+input[type="file"].focus,
+input[type="file"]:focus,
+input[type="image"].focus,
+input[type="image"]:focus,
+.sr-only-focusable.focus,
+.sr-only-focusable:focus,
+a.dropdown-toggle.focus,
+a.dropdown-toggle:focus,
+.moodle-dialogue-base .closebutton.focus,
+.moodle-dialogue-base .closebutton:focus,
+button.close.focus,
+button.close:focus,
+.form-autocomplete-selection.focus,
+.form-autocomplete-selection:focus,
+[role="treeitem"]:not([aria-expanded="true"]).focus,
+[role="treeitem"]:not([aria-expanded="true"]):focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.page-context-header {
+  margin-left: 21px !important;
+}
+
+// custom-scroolbar
+/* Scrollbar personalizado para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+  height: 8px; /* Altura del scrollbar horizontal, si se usa */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color del pulgar de la scrollbar */
+  border-radius: 10px; /* Borde redondeado para estilo más suave */
+  border: 2px solid transparent; /* Borde para crear espacio alrededor del pulgar */
+  background-clip: content-box; /* Asegura que el color solo esté en el área visible */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Color del pulgar cuando se pasa el mouse por encima */
+}
+
+/* Scrollbar personalizado para Firefox */
+* {
+  scrollbar-width: thin; /* Define un scrollbar más delgado */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color del pulgar y la pista */
+}
+
+/* Scrollbar en hover para Firefox */
+*::-webkit-scrollbar-thumb:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Cambia el color del pulgar al pasar el mouse */
+}
