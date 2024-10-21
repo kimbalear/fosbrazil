@@ -87,6 +87,10 @@ input[type="text"], textarea, input[type="password"], input[type="email"] {
         box-shadow: 0 0 5px $shadow !important;
         outline: none;
     }
+    &:hover {
+        color: white !important;
+        background-color: $G1_00 !important;
+    }
 }
 
 .btn-primary {
