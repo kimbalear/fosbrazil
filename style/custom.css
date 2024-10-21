@@ -753,6 +753,10 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   box-shadow: 0 0 5px 0 0 5px rgba(76, 175, 80, 0.5) !important;
   outline: none;
 }
+.btn-outline-secondary:hover {
+  color: white !important;
+  background-color: #386641 !important;
+}
 
 .btn-primary {
   background-color: #386641 !important;
