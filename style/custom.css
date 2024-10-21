@@ -654,11 +654,13 @@ h6 {
 
 .btn-footer-popover {
   background-color: #386641 !important;
-  color: white;
+  color: white !important;
 }
 .btn-footer-popover:hover, .btn-footer-popover:focus, .btn-footer-popover:active {
+  background-color: #edf6ea !important;
+}
+.btn-footer-popover:hover .fa, .btn-footer-popover:focus .fa, .btn-footer-popover:active .fa {
   color: #386641 !important;
-  background-color: #88a38d !important;
 }
 
 @media (min-width: 768px) {
@@ -830,6 +832,13 @@ body a:hover {
 .main-inner {
   padding: 0px !important;
 }
+@media only screen and (max-width: 767.98px) {
+  .main-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px !important;
+  }
+}
 
 .custom_wrapper {
   max-width: 788px !important;
@@ -889,36 +898,72 @@ button.close:focus,
   margin-left: 21px !important;
 }
 
-/* Scrollbar personalizado para navegadores basados en WebKit (Chrome, Safari) */
+.list-group-item.active {
+  color: #386641 !important;
+  font-weight: 600 !important;
+  background-color: #ebf0ec !important;
+  border-color: #386641 !important;
+}
+
+.activity-add, .block-add {
+  color: #49A02D;
+  background-color: white;
+  border-color: #49A02D;
+  border-width: 1px;
+  width: 100%;
+}
+.activity-add:hover, .block-add:hover {
+  background-color: #49A02D;
+  color: white;
+}
+
+.activity-add .pluscontainer, .block-add .pluscontainer {
+  border: 1px solid #49A02D;
+}
+
+.text-primary {
+  color: #386641 !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+  color: white !important;
+  background-color: #386641 !important;
+  border-color: #A7C958 !important;
+}
+
+.fa {
+  color: #afc2b3;
+}
+
+/* Scrollbar WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 8px; /* Ancho del scrollbar */
-  height: 8px; /* Altura del scrollbar horizontal, si se usa */
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Fondo de la barra de desplazamiento */
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.3); /* Color del pulgar de la scrollbar */
-  border-radius: 10px; /* Borde redondeado para estilo más suave */
-  border: 2px solid transparent; /* Borde para crear espacio alrededor del pulgar */
-  background-clip: content-box; /* Asegura que el color solo esté en el área visible */
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.5); /* Color del pulgar cuando se pasa el mouse por encima */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Scrollbar personalizado para Firefox */
 * {
-  scrollbar-width: thin; /* Define un scrollbar más delgado */
-  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Color del pulgar y la pista */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 }
 
 /* Scrollbar en hover para Firefox */
 *::-webkit-scrollbar-thumb:hover {
-  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Cambia el color del pulgar al pasar el mouse */
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,9 +1,11 @@
 .btn-footer-popover {
   background-color: $G1_00 !important;
-  color: white;
+  color: white!important;
   &:hover, &:focus, &:active {
-    color: $G1_00 !important;
-    background-color: $G1_40 !important;
+    .fa {
+      color: $G1_00 !important;
+    }
+    background-color: $G3_90 !important;
   }
 }
 
