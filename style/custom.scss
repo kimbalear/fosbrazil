@@ -178,3 +178,59 @@ button.close:focus,
 #region-main{
   padding-left: 16px!important;
 }
+
+// create account
+div[role="main"] {
+  padding: 0 !important;
+
+  .signupform {
+
+      form {
+
+          fieldset {
+              .fcontainer {
+                  >div:last-child {
+                      >div:nth-child(2) {
+                          div {
+                              flex-direction: row;
+                          }
+                      }
+                  }
+
+                  #fitem_id_profile_field_dataofbirth {
+                      >div:nth-child(2) {
+
+                          .fdate_selector {
+                              flex-direction: row !important;
+                          }
+                      }
+                  }
+              }
+          }
+
+          .custom-select {
+              width: 100%;
+          }
+
+          #fgroup_id_buttonar {
+
+              >div:nth-child(2) {
+                  >div:nth-child(1) {
+                      div {
+                          div {
+                              width: 100% !important;
+
+                              span {
+                                  input {
+                                      width: 100% !important;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+
+          }
+      }
+  }
+}

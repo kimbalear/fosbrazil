@@ -975,4 +975,23 @@ button.close:focus,
   padding-left: 16px !important;
 }
 
+div[role=main] {
+  padding: 0 !important;
+}
+div[role=main] .signupform form fieldset .fcontainer > div:last-child > div:nth-child(2) div {
+  flex-direction: row;
+}
+div[role=main] .signupform form fieldset .fcontainer #fitem_id_profile_field_dataofbirth > div:nth-child(2) .fdate_selector {
+  flex-direction: row !important;
+}
+div[role=main] .signupform form .custom-select {
+  width: 100%;
+}
+div[role=main] .signupform form #fgroup_id_buttonar > div:nth-child(2) > div:nth-child(1) div div {
+  width: 100% !important;
+}
+div[role=main] .signupform form #fgroup_id_buttonar > div:nth-child(2) > div:nth-child(1) div div span input {
+  width: 100% !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
