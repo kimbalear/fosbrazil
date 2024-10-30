@@ -822,6 +822,74 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   border-color: #386641;
 }
 
+.block_myoverview .whitebutton .btn-secondary {
+  background: white;
+  border-color: #386641 !important;
+  color: #386641 !important;
+}
+
+.title_st-page {
+  background-color: #dbecd5;
+  color: #386641;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav_st-page {
+  margin: 20px auto;
+  padding: 8px 20px;
+  background-color: #fbf8f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+.nav_st-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.nav_st-page ul li {
+  display: list-item;
+  margin: 12px 0;
+}
+.nav_st-page ul li a {
+  text-decoration: none;
+  color: #4c7554;
+  font-weight: 500;
+}
+
+.content_st-page {
+  max-width: 800px;
+  margin: 20px auto 150px;
+  padding: 20px;
+  background-color: #fbf8f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+.content_st-page .section-title {
+  font-weight: bold;
+  color: #4c7554;
+}
+.content_st-page .list-item {
+  margin-bottom: 15px;
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+  background-color: #393536;
+  color: white;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -910,19 +978,22 @@ button.close:focus,
   border-color: #386641 !important;
 }
 
-.activity-add, .block-add {
+.activity-add,
+.block-add {
   color: #49A02D;
   background-color: white;
   border-color: #49A02D;
   border-width: 1px;
   width: 100%;
 }
-.activity-add:hover, .block-add:hover {
+.activity-add:hover,
+.block-add:hover {
   background-color: #49A02D;
   color: white;
 }
 
-.activity-add .pluscontainer, .block-add .pluscontainer {
+.activity-add .pluscontainer,
+.block-add .pluscontainer {
   border: 1px solid #49A02D;
 }
 
@@ -930,7 +1001,9 @@ button.close:focus,
   color: #386641 !important;
 }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle {
   color: white !important;
   background-color: #386641 !important;
   border-color: #A7C958 !important;
@@ -981,6 +1054,7 @@ button.close:focus,
 
 div[role=main] {
   padding: 0 !important;
+  overflow-x: hidden;
 }
 div[role=main] .signupform form fieldset .fcontainer > div:last-child > div:nth-child(2) div {
   flex-direction: row;
