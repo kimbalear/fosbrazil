@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir . '/behat/lib.php');
 require_once($CFG->dirroot . '/course/lib.php');
 
-
 // Add block button in editing mode.
 $addblockbutton = $OUTPUT->addblockbutton();
 
@@ -107,8 +106,7 @@ $templatecontext = [
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
     'logofooter' => $OUTPUT->image_url('logo/logo_secundary_dark', 'theme_fosbrazil'),
-    'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil'),
-    'privacy_policy_url' => new moodle_url('/theme/fosbrazil/layout/privacy_policy.php')
+    'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil')
 ];
 
-echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost/drawers', $templatecontext);
