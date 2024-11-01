@@ -199,4 +199,6 @@ $THEME->layouts = [
     )
 ];
 
+$THEME->custommenuitems = 'Privacy Policy|/theme/fosbrazil/privacy_policy.php'; 
+
 $THEME->javascripts_footer = array('custom');

@@ -108,7 +108,7 @@ $templatecontext = [
     'addblockbutton' => $addblockbutton,
     'logofooter' => $OUTPUT->image_url('logo/logo_secundary_dark', 'theme_fosbrazil'),
     'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil'),
-    'privacy_policy_url' => new moodle_url('/theme/fosbrazil/layout/privacy_policy.php')
+    'privacy_policy_url' => new moodle_url('/theme/fosbrazil/privacy_policy.php')
 ];
 
 echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);
