@@ -31,8 +31,14 @@ require_once($CFG->dirroot . '/course/lib.php');
 // Add block button in editing mode.
 $addblockbutton = $OUTPUT->addblockbutton();
 
-user_preference_allow_ajax_update('drawer-open-index', PARAM_BOOL);
-user_preference_allow_ajax_update('drawer-open-block', PARAM_BOOL);
+//user_preference_allow_ajax_update('drawer-open-index', PARAM_BOOL);
+//user_preference_allow_ajax_update('drawer-open-block', PARAM_BOOL);
+
+$drawerOpenIndex = get_user_preferences('drawer-open-index', false);
+$drawerOpenBlock = get_user_preferences('drawer-open-block', false);
+
+set_user_preference('drawer-open-index', $drawerOpenIndex);
+set_user_preference('drawer-open-block', $drawerOpenBlock);
 
 if (isloggedin()) {
     $courseindexopen = (get_user_preferences('drawer-open-index', true) == true);
@@ -107,7 +113,10 @@ $templatecontext = [
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
     'logofooter' => $OUTPUT->image_url('logo/logo_secundary_dark', 'theme_fosbrazil'),
-    'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil')
+    'grap_dsgn_footer' => $OUTPUT->image_url('graphic_design/graf_1', 'theme_fosbrazil'),
+    'privacy_policy_url' => new moodle_url('/theme/fosbrazil/privacy_policy.php'),
+    'about_url' => new moodle_url('/theme/fosbrazil/about.php'),
+    'contact_url' => new moodle_url('/theme/fosbrazil/contact.php')
 ];
 
 echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);
