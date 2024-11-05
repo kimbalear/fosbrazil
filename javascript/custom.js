@@ -12,5 +12,7 @@ require(["jquery"], function ($) {
     function scrollToTop() {
       $("html, body").animate({ scrollTop: 0 }, "smooth");
     }
+
+    alert("Testing");
   });
 });
