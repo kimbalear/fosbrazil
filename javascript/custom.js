@@ -13,6 +13,5 @@ require(["jquery"], function ($) {
       $("html, body").animate({ scrollTop: 0 }, "smooth");
     }
 
-    alert("Testing");
   });
 });
