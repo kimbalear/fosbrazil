@@ -51,7 +51,6 @@ export const validate = () => {
 };
 
 function EighteenYearsPassed(day, month, year) {
-    alert(day + " " + month + " " + year);
     // Convert strings to integers
     const dayInt = parseInt(day, 10);
     const monthInt = parseInt(month, 10) - 1; // Month is 0-indexed in JavaScript Date
