@@ -24,10 +24,6 @@ h6 {
   color: #608567 !important;
 }
 
-#page-content {
-  background-color: white;
-}
-
 .section .activity .activityinstance {
   min-width: 10%;
 }
@@ -664,12 +660,6 @@ h6 {
   color: #386641 !important;
 }
 
-@media (min-width: 768px) {
-  .pagelayout-standard #page.drawers .footer-popover,
-  body.limitedwidth #page.drawers .footer-popover {
-    max-width: none;
-  }
-}
 .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
   background-color: #608567 !important;
   color: white;
@@ -802,10 +792,6 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   color: #386641;
 }
 
-.activityiconcontainer.collaboration {
-  background-color: #386641;
-}
-
 .form-autocomplete-selection [data-active-selection=true] {
   box-shadow: 0 0 0 0.2rem 0 0 5px rgba(76, 175, 80, 0.5);
 }
@@ -893,13 +879,27 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #386641;
+  color: #393536;
 }
 body a {
-  color: #49A02D;
+  color: #BB4748;
 }
 body a:hover {
-  color: #A7C958;
+  color: #BB4748;
+}
+
+#page-content {
+  background-color: white;
+  height: 100% !important;
+}
+#page-content #region-main-box {
+  height: 100% !important;
+}
+#page-content #region-main-box #region-main {
+  height: 100% !important;
+}
+#page-content #region-main-box #region-main div[role=main] {
+  height: 100% !important;
 }
 
 .main-inner {
@@ -1070,6 +1070,20 @@ div[role=main] .signupform form #fgroup_id_buttonar > div:nth-child(2) > div:nth
 }
 div[role=main] .signupform form #fgroup_id_buttonar > div:nth-child(2) > div:nth-child(1) div div span input {
   width: 100% !important;
+}
+
+div[role=main] iframe {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+.collapsed-content {
+  color: #BB4748;
+}
+
+.availability-excerpt {
+  color: #393536;
 }
 
 /*# sourceMappingURL=custom.css.map */
