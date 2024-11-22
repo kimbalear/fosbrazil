@@ -46,3 +46,14 @@ function fosbrazil_extend_navigation(global_navigation $navigation) {
     $navigation->add_node($node_contact);
     $navigation->add_node($node_about);
 }
+
+function theme_fosbrazil_user_edit_form($form, $data) {
+    // Añade un nuevo campo al formulario.
+    $form->addElement('text', 'custom_field', get_string('customfield', 'theme_fosbrazil'));
+    $form->setType('custom_field', PARAM_TEXT);
+
+    // Si deseas establecer un valor por defecto.
+    if (isset($data->id)) {
+        $data->custom_field = 'Valor predeterminado';
+    }
+}

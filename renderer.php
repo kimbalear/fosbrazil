@@ -2789,3 +2789,23 @@ class coursecat_helper {
         return $name;
     }
 }
+
+namespace theme_fosbrazil\output;
+
+defined('MOODLE_INTERNAL') || die();
+
+class renderer extends \core_renderer {
+    public function header() {
+        global $PAGE;
+
+        // Cargar custom.js en todas las páginas.
+        $this->page->requires->js_call_amd('theme_fosbrazil/custom', 'init');
+
+        // Cargar validateRegistration.js solo en la página Edit profile.
+        if ($PAGE->pagetype === 'user-editadvanced') {
+            $this->page->requires->js_call_amd('theme_fosbrazil/validateRegistration', 'validate');
+        }
+
+        return parent::header();
+    }
+}

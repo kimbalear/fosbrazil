@@ -28,11 +28,6 @@ h6 {
   min-width: 10%;
 }
 
-#page.drawers {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
 .wrapper_home {
   width: 100%;
   max-width: 814px;
