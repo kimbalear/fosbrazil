@@ -23,14 +23,30 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: $G1_00;
+  color: $D1_10;
 
   a {
-    color: $G3_00;
+    color: $R1_00;
 
     &:hover {
-      color: $G2_00;
+      color: $R1_00;
     }
+  }
+}
+
+#page-content {
+  background-color: white;
+  height: 100% !important;
+  #region-main-box {
+      height: 100% !important;
+
+      #region-main {
+          height: 100% !important;
+
+          div[role="main"] {
+              height: 100% !important;
+          }
+      }
   }
 }
 
@@ -232,4 +248,19 @@ div[role="main"] {
       }
     }
   }
+}
+
+//H5P interactive videos are displayed too large. Reduce the max width and center it.
+
+div[role="main"] iframe {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+.collapsed-content{
+  color:$R1_00;
+}
+.availability-excerpt{
+  color: $D1_10;
 }
