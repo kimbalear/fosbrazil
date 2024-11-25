@@ -199,7 +199,16 @@ $THEME->layouts = [
     )
 ];
 
+$THEME->templates = [
+    'core_user/edit_profile_fields' => 'theme_fosbrazil/edit_profile_fields',
+];
+
+$THEME->templates = [
+    'core_user/edit_profile_fields' => 'theme_fosbrazil/core_user/edit_profile_fields',
+];
+
+
 $THEME->custommenuitems = "Privacy Policy|/theme/fosbrazil/privacy_policy.php\\nAbout|/theme/fosbrazil/about.php\\nContact|/theme/fosbrazil/contact.php";
 
-$THEME->javascript_footer = array('custom', 'validateRegistration');
+$THEME->javascripts_footer = array('custom');
 

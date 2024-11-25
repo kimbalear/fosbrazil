@@ -1,19 +1,14 @@
-define(['jquery'], function($) {
-    return {
-        init: function() {
-            console.log('custom.js cargado correctamente.');
-            $(window).on("scroll", function() {
-                const btn = $("#backToTopBtn");
-                if ($(window).scrollTop() > 200) {
-                    btn.show();
-                } else {
-                    btn.hide();
-                }
-            });
+require(["jquery"], function ($) {
+  $(document).ready(function () {
+    if ($("body").attr("id") === "page-user-editadvanced") {
+      M.util.js_pending("theme_boost/loader");
+      require(["theme_boost/loader"], function () {
+        M.util.js_complete("theme_boost/loader");
+      });
 
-            function scrollToTop() {
-                $("html, body").animate({ scrollTop: 0 }, "smooth");
-            }
-        }
-    };
+      require(["theme_fosbrazil/init"], (module) => module.init());
+      require(["theme_fosbrazil/validateRegistration"], (module) =>
+        module.validate());
+    }
+  });
 });
