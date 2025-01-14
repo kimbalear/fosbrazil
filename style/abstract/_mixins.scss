@@ -1,4 +1,17 @@
-// Responsive mixins 
+// Responsive mixins
+
+@mixin portrait {
+    @media (orientation: portrait) {
+      @content;
+    }
+  }
+  
+  @mixin landscape {
+    @media (orientation: landscape) {
+      @content;
+    }
+  }
+  
 
 @mixin brk440 {
     @media only screen and (max-width: 440px) {
