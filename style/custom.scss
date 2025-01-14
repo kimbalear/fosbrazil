@@ -251,11 +251,17 @@ div[role="main"] {
 }
 
 //H5P interactive videos are displayed too large. Reduce the max width and center it.
-
 div[role="main"] iframe {
   display: block;
   max-width: 800px;
   margin: 0 auto !important;
+}
+
+@include landscape {
+  div[role="main"] iframe {
+    width: 50%!important;
+    height: 100%;
+  }
 }
 
 .collapsed-content{
@@ -263,4 +269,4 @@ div[role="main"] iframe {
 }
 .availability-excerpt{
   color: $D1_10;
-}
+}  

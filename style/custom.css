@@ -1092,6 +1092,11 @@ div[role=main] iframe {
   margin: 0 auto !important;
 }
 
+@media (orientation: landscape) {
+  div[role=main] iframe {
+    width: 50% !important;
+  }
+}
 .collapsed-content {
   color: #BB4748;
 }

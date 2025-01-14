@@ -1,5 +1,6 @@
 require(["jquery"], function ($) {
   $(document).ready(function () {
+
     if ($("body").attr("id") === "page-user-editadvanced") {
       M.util.js_pending("theme_boost/loader");
       require(["theme_boost/loader"], function () {
