@@ -1088,15 +1088,9 @@ div[role=main] .signupform form #fgroup_id_buttonar > div:nth-child(2) > div:nth
 
 div[role=main] iframe {
   display: block;
-  max-width: 800px;
   margin: 0 auto !important;
 }
 
-@media (orientation: landscape) {
-  div[role=main] iframe {
-    width: 50% !important;
-  }
-}
 .collapsed-content {
   color: #BB4748;
 }

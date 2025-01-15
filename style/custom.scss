@@ -40,13 +40,13 @@ body {
   #region-main-box {
     min-height: 100% !important;
 
-      #region-main {
-        min-height: 100% !important;
+    #region-main {
+      min-height: 100% !important;
 
-          div[role="main"] {
-            min-height: 100% !important;
-          }
+      div[role="main"] {
+        min-height: 100% !important;
       }
+    }
   }
 }
 
@@ -253,20 +253,13 @@ div[role="main"] {
 //H5P interactive videos are displayed too large. Reduce the max width and center it.
 div[role="main"] iframe {
   display: block;
-  max-width: 800px;
+  //max-width: 800px;
   margin: 0 auto !important;
 }
 
-@include landscape {
-  div[role="main"] iframe {
-    width: 50%!important;
-    height: 100%;
-  }
+.collapsed-content {
+  color: $R1_00;
 }
-
-.collapsed-content{
-  color:$R1_00;
-}
-.availability-excerpt{
+.availability-excerpt {
   color: $D1_10;
-}  
+}
