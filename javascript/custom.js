@@ -1,5 +1,41 @@
 require(["jquery"], function ($) {
-  $(document).ready(function () {
+  $(window).on("load", function () {
+    function esMovil() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    }
+    
+    function obtenerOrientacion() {
+      if (esMovil()) {
+        const mql = window.matchMedia("(orientation: portrait)");
+    
+        if (mql.matches) {
+          $('div[role="main"] iframe').css({
+            "max-width": "none",
+          });
+        } else {
+          $('div[role="main"] iframe').css({
+            "max-width": "400px",
+          });
+        }
+      } else {
+        const mql = window.matchMedia("(orientation: portrait)");
+        if (mql.matches) {
+          $('div[role="main"] iframe').css({
+            "max-width": "800px",
+          });
+        } else {
+          $('div[role="main"] iframe').css({
+            "max-width": "800px",
+          });
+        }
+      }
+    }
+    
+    obtenerOrientacion();
+    
+    window.addEventListener("resize", obtenerOrientacion);
 
     if ($("body").attr("id") === "page-user-editadvanced") {
       M.util.js_pending("theme_boost/loader");
