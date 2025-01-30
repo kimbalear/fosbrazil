@@ -74,5 +74,5 @@ $templatecontext = [
     'addblockbutton' => $addblockbutton
 ];
 
-
+echo $OUTPUT->main_content();
 echo $OUTPUT->render_from_template('theme_fosbrazil/edit_profile_fields', $templatecontext);
