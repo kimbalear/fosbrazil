@@ -117,5 +117,5 @@ $templatecontext = [
     'about_url' => new moodle_url('/theme/fosbrazil/about.php'),
     'contact_url' => new moodle_url('/theme/fosbrazil/contact.php')
 ];
-
+echo $OUTPUT->main_content();
 echo $OUTPUT->render_from_template('theme_fosbrazil/edit_profile_fields', $templatecontext);
