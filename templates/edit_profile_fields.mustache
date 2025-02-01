@@ -15,127 +15,199 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template core_user/edit_profile_fields
+    @template theme_boost/drawers
 
-    UI for editing profile fields
+    Boost drawer template.
+
+    Context variables required for this template:
+    * sitename - The name of the site
+    * output - The core renderer for the page
+    * bodyattributes - attributes for the body tag as a string of html attributes
+    * sidepreblocks - HTML for the blocks
+    * hasblocks - true if there are blocks on this page
+    * courseindexopen - true if the nav drawer should be open on page load
+    * regionmainsettingsmenu - HTML for the region main settings menu
+    * hasregionmainsettingsmenu - There is a region main settings menu on this page.
 
     Example context (json):
     {
-        "baseurl": "index.php",
-        "sesskey": "12345",
-        "categories": [
-            {
-                "id": 1,
-                "name": "Cat1",
-                "fields": [
-                    {"id": 1, "name": "Field1", "isfirst": true, "islast": false},
-                    {"id": 2, "name": "Field2", "isfirst": false, "islast": false},
-                    {"id": 3, "name": "Field3", "isfirst": false, "islast": true}
-                ],
-                "hasfields": true,
-                "isfirst": true,
-                "candelete": true
-            },
-            {
-                "id": 2,
-                "name": "Cat2",
-                "candelete": true
-            },
-            {
-                "id": 3,
-                "name": "Cat3",
-                "islast": true,
-                "candelete": true
-            }
-        ]
+        "sitename": "Moodle",
+        "output": {
+            "doctype": "<!DOCTYPE html>",
+            "page_title": "Test page",
+            "favicon": "favicon.ico",
+            "main_content": "<h1>Headings make html validators happier</h1>"
+         },
+        "bodyattributes":"",
+        "sidepreblocks": "<h2>Blocks html goes here</h2>",
+        "hasblocks":true,
+        "courseindexopen": true,
+        "navdraweropen": false,
+        "blockdraweropen": true,
+        "regionmainsettingsmenu": "",
+        "hasregionmainsettingsmenu": false,
+        "addblockbutton": ""
     }
 }}
+{{> theme_boost/head }}
 
-<div class="row profileeditor">
-    <div class="col align-self-end">
-        <a tabindex="0" role="button" class="btn btn-secondary float-right" data-action="editcategory">{{#str}}profilecreatecategory, admin{{/str}}</a>
-    </div>
-</div>
+<body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
+<div id="page-wrapper" class="d-print-block">
 
-<div class="categorieslist">
-{{#categories}}
-<div data-category-id="{{id}}" id="category-{{id}}" class="mt-2">
-    <div class="row justify-content-between align-items-end">
-        <div class="col-6 categoryinstance">
-            <h3>
-                {{{name}}}
-                <a href="#" data-action="editcategory" data-id="{{id}}" data-name="{{name}}">
-                    {{#pix}}t/edit, core, {{#str}}edit{{/str}}{{/pix}}</a>
-                {{#candelete}}
-                    <a href="{{baseurl}}?action=deletecategory&id={{id}}&sesskey={{sesskey}}">
-                    {{#pix}}t/delete, core, {{#str}}delete{{/str}}{{/pix}}</a>
-                {{/candelete}}
-                {{^isfirst}}
-                    <a href="{{baseurl}}?id={{id}}&action=movecategory&dir=up&amp;sesskey={{sesskey}}">
-                    {{#pix}}t/up, core, {{#str}}moveup{{/str}}{{/pix}}</a>
-                {{/isfirst}}
-                {{#isfirst}}{{#pix}}spacer, moodle{{/pix}}{{/isfirst}}
-                {{^islast}}
-                    <a href="{{baseurl}}?id={{id}}&action=movecategory&dir=down&amp;sesskey={{sesskey}}">
-                    {{#pix}}t/down, core, {{#str}}movedown{{/str}}{{/pix}}</a>
-                {{/islast}}
-            </h3>
+    {{{ output.standard_top_of_body_html }}}
+
+    {{> theme_boost/navbar }}
+    {{#courseindex}}
+        {{< theme_boost/drawer }}
+            {{$id}}theme_boost-drawers-courseindex{{/id}}
+            {{$drawerclasses}}drawer drawer-left {{#courseindexopen}}show{{/courseindexopen}}{{/drawerclasses}}
+            {{$drawercontent}}
+                {{{courseindex}}}
+            {{/drawercontent}}
+            {{$drawerpreferencename}}drawer-open-index{{/drawerpreferencename}}
+            {{$drawerstate}}show-drawer-left{{/drawerstate}}
+            {{$tooltipplacement}}right{{/tooltipplacement}}
+            {{$closebuttontext}}{{#str}}closecourseindex, core{{/str}}{{/closebuttontext}}
+        {{/ theme_boost/drawer}}
+    {{/courseindex}}
+    {{#hasblocks}}
+        {{< theme_boost/drawer }}
+            {{$id}}theme_boost-drawers-blocks{{/id}}
+            {{$drawerclasses}}drawer drawer-right{{#blockdraweropen}} show{{/blockdraweropen}}{{/drawerclasses}}
+            {{$drawercontent}}
+                <section class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                    {{{ addblockbutton }}}
+                    {{{ sidepreblocks }}}
+                </section>
+            {{/drawercontent}}
+            {{$drawerpreferencename}}drawer-open-block{{/drawerpreferencename}}
+            {{$forceopen}}{{#forceblockdraweropen}}1{{/forceblockdraweropen}}{{/forceopen}}
+            {{$drawerstate}}show-drawer-right{{/drawerstate}}
+            {{$tooltipplacement}}left{{/tooltipplacement}}
+            {{$drawercloseonresize}}1{{/drawercloseonresize}}
+            {{$closebuttontext}}{{#str}}closeblockdrawer, core{{/str}}{{/closebuttontext}}
+        {{/ theme_boost/drawer}}
+    {{/hasblocks}}
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers {{#courseindexopen}}show-drawer-left{{/courseindexopen}} {{#blockdraweropen}}show-drawer-right{{/blockdraweropen}} drag-container">
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+                {{#courseindex}}
+                    <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
+                        <button
+                            class="btn icon-no-margin"
+                            data-toggler="drawers"
+                            data-action="toggle"
+                            data-target="theme_boost-drawers-courseindex"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="{{#str}}opendrawerindex, core{{/str}}"
+                        >
+                            <span class="sr-only">{{#str}}opendrawerindex, core{{/str}}</span>
+                            {{#pix}} t/index_drawer, moodle {{/pix}}
+                        </button>
+                    </div>
+                {{/courseindex}}
+                {{#hasblocks}}
+                    <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
+                        <button
+                            class="btn icon-no-margin"
+                            data-toggler="drawers"
+                            data-action="toggle"
+                            data-target="theme_boost-drawers-blocks"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="{{#str}}opendrawerblocks, core{{/str}}"
+                        >
+                            <span class="sr-only">{{#str}}opendrawerblocks, core{{/str}}</span>
+                            <span class="dir-rtl-hide">{{#pix}}t/blocks_drawer, core{{/pix}}</span>
+                            <span class="dir-ltr-hide">{{#pix}}t/blocks_drawer_rtl, core{{/pix}}</span>
+                        </button>
+                    </div>
+                {{/hasblocks}}
+            </div>
+            {{{ output.full_header }}}
+            {{#secondarymoremenu}}
+                <div class="secondary-navigation d-print-none">
+                    {{> core/moremenu}}
+                </div>
+            {{/secondarymoremenu}}
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    {{#hasregionmainsettingsmenu}}
+                    <div id="region-main-settings-menu" class="d-print-none">
+                        <div> {{{ regionmainsettingsmenu }}} </div>
+                    </div>
+                    {{/hasregionmainsettingsmenu}}
+                    <section id="region-main" aria-label="{{#str}}content{{/str}}">
+
+                        {{#hasregionmainsettingsmenu}}
+                            <div class="region_main_settings_menu_proxy"></div>
+                        {{/hasregionmainsettingsmenu}}
+                        {{{ output.course_content_header }}}
+                        {{#headercontent}}
+                            {{> core/activity_header }}
+                        {{/headercontent}}
+                        {{#overflow}}
+                            <div class="container-fluid tertiary-navigation">
+                                <div class="navitem">
+                                    {{> core/url_select}}
+                                </div>
+                            </div>
+                        {{/overflow}}
+                        {{{ output.main_content }}}
+                        {{{ output.activity_navigation }}}
+                        {{{ output.course_content_footer }}}
+
+                    </section>
+                </div>
+            </div>
         </div>
-        <div class="col-auto text-right">
-            {{#addfieldmenu}}{{> core/action_menu}}{{/addfieldmenu}}
+        <div class="myfooter">
+            <div class="grap_dsgn_footer">
+                <img src="{{{grap_dsgn_footer}}}" class="grap_dsgn">
+            </div>
+            <div class="content">
+                <div class="nav_content">
+                    <div class="nav_items">
+                        <div class="item1">
+                            <div class="item_cnt">
+                                <a href="{{privacy_policy_url}}">{{#str}} footer_menu1Item1, theme_fosbrazil {{/str}}</a>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="item_cnt">
+                                <a href="{{about_url}}">{{#str}} footer_menu1Item2, theme_fosbrazil {{/str}}</a>
+                            </div>
+                        </div>
+                        <div class="item3">
+                            <div class="item_cnt">
+                                <a href="{{contact_url}}">{{#str}} footer_menu1Item3, theme_fosbrazil {{/str}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo_c">
+                        <div class="item_cnt">
+                            <img src="{{{logofooter}}}" class="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="copy_right">
+                    <div>{{#str}} footer_copyright, theme_fosbrazil {{/str}}</div>
+                </div>
+            </div>
         </div>
+        {{> theme_boost/footer }}
     </div>
-
-    <table class="generaltable fullwidth profilefield">
-        {{#hasfields}}
-            <thead>
-                <tr>
-                    <th scope="col" class="col-8">{{#str}}profilefield, admin{{/str}}</th>
-                    <th scope="col" class="col-3 text-right">{{#str}}edit{{/str}}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#fields}}
-                    <tr>
-                        <td class="col-8">
-                            {{{name}}}
-                        </td>
-                        <td class="col-3 text-right">
-                            <a href="#" data-action="editfield" data-id="{{id}}" data-name="{{name}}">
-                                {{#pix}}t/edit, core, {{#str}}edit{{/str}}{{/pix}}</a>
-                            <a href="{{baseurl}}?action=deletefield&id={{id}}&sesskey={{sesskey}}">
-                                {{#pix}}t/delete, core, {{#str}}delete{{/str}}{{/pix}}</a>
-                            {{^isfirst}}
-                                <a href="{{baseurl}}?id={{id}}&action=movefield&dir=up&amp;sesskey={{sesskey}}">
-                                {{#pix}}t/up, core, {{#str}}moveup{{/str}}{{/pix}}</a>
-                            {{/isfirst}}
-                            {{#isfirst}}{{#pix}}spacer, moodle{{/pix}}{{/isfirst}}
-                            {{^islast}}
-                                <a href="{{baseurl}}?id={{id}}&action=movefield&dir=down&amp;sesskey={{sesskey}}">
-                                {{#pix}}t/down, core, {{#str}}movedown{{/str}}{{/pix}}</a>
-                            {{/islast}}
-                            {{#islast}}{{#pix}}spacer, moodle{{/pix}}{{/islast}}
-                        </td>
-                    </tr>
-                {{/fields}}
-            </tbody>
-        {{/hasfields}}
-        {{^hasfields}}
-            <thead>
-                <tr class="nofields alert alert-danger alert-block fade in">
-                    <td>
-                        {{#str}}profilenofieldsdefined, admin{{/str}}
-                    </td>
-                </tr>
-            </thead>
-        {{/hasfields}}
-    </table>
-</div>
-{{/categories}}
+    {{{ output.standard_after_main_region_html }}}
 </div>
 
+</body>
+</html>
 {{#js}}
-    require(['core_user/edit_profile_fields'], function(s) {
-        s.init();
-    });
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
 {{/js}}
