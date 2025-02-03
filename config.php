@@ -105,7 +105,7 @@ $THEME->layouts = [
     ),
     // Server administration scripts.
     'admin' => array(
-        'file' => 'edit_profile_fields.php',
+        'file' => 'adminFOSBR.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
