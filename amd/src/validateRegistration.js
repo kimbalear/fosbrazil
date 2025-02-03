@@ -1,6 +1,6 @@
 export const validate = () => {
 
-    const form = document.querySelector('.mform.full-width-labels');
+    const form = document.querySelector('.mform.full-width-labels, .mform');
     const phoneInput = document.getElementById('id_profile_field_phonenumber');
     const dayInput = document.getElementById('id_profile_field_dataofbirth_day');
     const monthInput = document.getElementById('id_profile_field_dataofbirth_month');
