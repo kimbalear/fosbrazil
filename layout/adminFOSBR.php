@@ -22,23 +22,26 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/* Initial requirements and dependencies */ 
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir . '/behat/lib.php');
 require_once($CFG->dirroot . '/course/lib.php');
 
-// Add block button in editing mode.
+/* Add block button in editing mode. */
 $addblockbutton = $OUTPUT->addblockbutton();
 
 //user_preference_allow_ajax_update('drawer-open-index', PARAM_BOOL);
 //user_preference_allow_ajax_update('drawer-open-block', PARAM_BOOL);
 
+/* User preferences for the status of the panels */
 $drawerOpenIndex = get_user_preferences('drawer-open-index', false);
 $drawerOpenBlock = get_user_preferences('drawer-open-block', false);
 
 set_user_preference('drawer-open-index', $drawerOpenIndex);
 set_user_preference('drawer-open-block', $drawerOpenBlock);
 
+/* Configuration of panel visibility according to the user's status */
 if (isloggedin()) {
     $courseindexopen = (get_user_preferences('drawer-open-index', true) == true);
     $blockdraweropen = (get_user_preferences('drawer-open-block') == true);
@@ -47,20 +50,24 @@ if (isloggedin()) {
     $blockdraweropen = false;
 }
 
+/* Additional configuration for testing (Behat) */
 if (defined('BEHAT_SITE_RUNNING')) {
     $blockdraweropen = true;
 }
 
+/* CSS class configuration */
 $extraclasses = ['uses-drawers'];
 if ($courseindexopen) {
     $extraclasses[] = 'drawer-open-index';
 }
 
+/*  Blocks and their status */
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = (strpos($blockshtml, 'data-block=') !== false || !empty($addblockbutton));
 if (!$hasblocks) {
     $blockdraweropen = false;
 }
+/* Course Index */
 $courseindex = core_course_drawer();
 if (!$courseindex) {
     $courseindexopen = false;
@@ -69,6 +76,7 @@ if (!$courseindex) {
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $forceblockdraweropen = $OUTPUT->firstview_fakeblocks();
 
+/* Operation of the secondary navigation and the additional menu */
 $secondarynavigation = false;
 $overflow = '';
 if ($PAGE->has_secondary_navigation()) {
@@ -81,15 +89,19 @@ if ($PAGE->has_secondary_navigation()) {
     }
 }
 
+/* Primary menu and other header items */
 $primary = new core\navigation\output\primary($PAGE);
 $renderer = $PAGE->get_renderer('core');
 $primarymenu = $primary->export_for_template($renderer);
+
 $buildregionmainsettings = !$PAGE->include_region_main_settings_in_header_actions() && !$PAGE->has_secondary_navigation();
 // If the settings menu will be included in the header then don't add it here.
 $regionmainsettingsmenu = $buildregionmainsettings ? $OUTPUT->region_main_settings_menu() : false;
 
 $header = $PAGE->activityheader;
 $headercontent = $header->export_for_template($renderer);
+
+
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
