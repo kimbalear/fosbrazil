@@ -7,8 +7,12 @@ export const validate = () => {
     const yearInput = document.getElementById('id_profile_field_dataofbirth_year');
     const occupationInput = document.getElementById('id_profile_field_occupation');
     const genderInput = document.getElementById('id_profile_field_gender');
-    const occupationOtherInput = document.getElementById("fitem_id_profile_field_occupation_other");
     const genderOtherInput = document.getElementById("fitem_id_profile_field_gender_other");
+    const occupationOtherInput = document.getElementById("fitem_id_profile_field_occupation_other");
+    const occupationSocialMediaInput1 = document.getElementById('fitem_id_profile_field_occupation_socialmedia1');
+    const occupationSocialMediaInput2 = document.getElementById('fitem_id_profile_field_occupation_socialmedia2');
+    const occupationSocialMediaInput3 = document.getElementById('fitem_id_profile_field_occupation_socialmedia3');
+    const occupationSocialMediaInput4 = document.getElementById('fitem_id_profile_field_occupation_socialmedia4');
 
     form.addEventListener('submit', function(event) {
         const phoneNumber = libphonenumber.parsePhoneNumberFromString(phoneInput.value, 'BR');
@@ -29,7 +33,7 @@ export const validate = () => {
 
     occupationInput.addEventListener("change", function() {
         if (occupationInput.value === "Outro") {
-            occupationOtherInput.style.display = "block"; // Show the hidden field
+            occupationOtherInput.style.display = "flex"; // Show the hidden field
             occupationOtherInput.focus();
         } else {
             occupationOtherInput.style.display = "none"; // Hide the field if another option is selected
@@ -38,9 +42,32 @@ export const validate = () => {
         }
     });
 
+    occupationInput.addEventListener("change", function() {
+        if (occupationInput.value.includes("Trabalhador(a)"))  {
+            occupationSocialMediaInput1.style.display = "flex"; // Show the hidden field
+            occupationSocialMediaInput1.focus();
+            occupationSocialMediaInput2.style.display = "flex"; // Show the hidden field
+            occupationSocialMediaInput3.style.display = "flex"; // Show the hidden field
+            occupationSocialMediaInput4.style.display = "flex"; // Show the hidden field
+        } else {
+            occupationSocialMediaInput1.style.display = "none"; // Hide the field if another option is selected
+            const occupationSocialMediaText1 = occupationSocialMediaInput1.querySelector("#id_profile_field_occupation_socialmedia1");
+            occupationSocialMediaText1.value = "";
+            occupationSocialMediaInput2.style.display = "none"; // Hide the field if another option is selected
+            const occupationSocialMediaText2 = occupationSocialMediaInput2.querySelector("#id_profile_field_occupation_socialmedia2");
+            occupationSocialMediaText2.value = "";
+            occupationSocialMediaInput3.style.display = "none"; // Hide the field if another option is selected
+            const occupationSocialMediaText3 = occupationSocialMediaInput3.querySelector("#id_profile_field_occupation_socialmedia3");
+            occupationSocialMediaText3.value = "";
+            occupationSocialMediaInput4.style.display = "none"; // Hide the field if another option is selected
+            const occupationSocialMediaText = occupationSocialMediaInput1.querySelector("#id_profile_field_occupation_socialmedia4");
+            occupationSocialMediaText.value = "";
+        }
+    });
+
     genderInput.addEventListener("change", function() {
         if (genderInput.value === "Outros") {
-            genderOtherInput.style.display = "block"; // Show the hidden field
+            genderOtherInput.style.display = "flex"; // Show the hidden field
             genderOtherInput.focus();
         } else {
             genderOtherInput.style.display = "none"; // Hide the field if another option is selected

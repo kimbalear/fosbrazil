@@ -37,7 +37,7 @@ require(["jquery"], function ($) {
     
     window.addEventListener("resize", obtenerOrientacion);
 
-    if ($("body").attr("id") === "page-user-editadvanced") {
+    if (["page-user-editadvanced", "page-user-edit"].includes($("body").attr("id"))) {
       M.util.js_pending("theme_boost/loader");
       require(["theme_boost/loader"], function () {
         M.util.js_complete("theme_boost/loader");
