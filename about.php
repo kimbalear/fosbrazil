@@ -20,9 +20,8 @@ $logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
         <p><?php echo get_string('about_p1', 'theme_fosbrazil'); ?></p>
         <p><?php echo get_string('about_p2', 'theme_fosbrazil'); ?></p>
         <p><?php echo get_string('about_p3', 'theme_fosbrazil'); ?></p>
-        <p>
-            <a href="https://circuitos.org.br/" target="_blank">https://circuitos.org.br/</a>
-        </p>
+        <p><?php echo get_string('about_p3', 'theme_fosbrazil'); ?><a href="https://circuitos.org.br/" target="_blank">https://circuitos.org.br/</a></p>
+        
 
     </div>
     <div class="content_st-page_parners">

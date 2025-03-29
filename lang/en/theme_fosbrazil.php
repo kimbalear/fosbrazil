@@ -150,7 +150,7 @@ $string['about_title']="About Us";
 $string['about_p1']="Sobre Nós";
 $string['about_p2']="Circuitos Não é Não é um curso de extensão que tem como base a Lei 14.786/2023, que criou o Protocolo Não é Não, um importante instrumento de proteção e prevenção da violência contra mulheres em estabelecimentos de lazer que vendem bebidas alcoólicas, como bares, restaurantes, boates e festas. O curso é direcionado especialmente a profissionais que gerenciam ou trabalham nesse tipo de estabelecimentos, mas qualquer pessoa interessada no tema pode se inscrever.";
 $string['about_p3']="O curso é online, gratuito e de curta duração, e oferece certificado para participantes que o concluem. O curso tem conteúdos dinâmicos e baseados em situações de constrangimento e violência frequentemente enfrentadas por mulheres em espaços de lazer. Uma vez iniciado, o curso poderá ser concluído no prazo máximo de três meses. Não há exigência de formação mínima para a matrícula.";
-$string['about_p4']="https://circuitos.org.br/";
+$string['about_p4']="Realizado em parceria pelo Ministério das Mulheres e a Universidade de Brasília (UnB), o curso conta com suporte técnico das organizações não-governamentais Anis – Instituto de Bioética e Fòs Feminista, e é apoiado pelo Google. Para mais informações sobre o Circuitos Não é Não, visite o site: ";
 // -> contact
 $string['contact_title']="Contact";
 $string['contact_p1']="We want to hear from you! If you have questions or difficulties with the course platform, or if you would like to share experiences and ideas about the implementation of the Não é Não Protocol, please write to <a href='suporte@circuitos.org.br'>suporte@circuitos.org.br</a>.";
