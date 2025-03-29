@@ -26,17 +26,17 @@ $logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
     <div class="content_st-page_parners">
     <div>
         <span class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></span>
-        <img src="<?php echo $logourl1; ?>" alt="Logo 1">
-        <img src="<?php echo $logourl2; ?>" alt="Logo 2">
+        <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>
+        <span class="logoPT"><img src="<?php echo $logourl2; ?>" alt="Logo 2"></span>
     </div>
     <div>
         <span class="aboutPT"><?php echo get_string('aboutPT2', 'theme_fosbrazil'); ?></span>
-        <img src="<?php echo $logourl3; ?>" alt="Logo 3">
-        <img src="<?php echo $logourl4; ?>" alt="Logo 4">
+        <span class="logoPT"> <img src="<?php echo $logourl3; ?>" alt="Logo 3"></span>
+        <span class="logoPT"><img src="<?php echo $logourl4; ?>" alt="Logo 4"></span>
     </div>
     <div>
         <span class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></span>
-        <img src="<?php echo $logourl1; ?>" alt="Logo 1">
+        <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>
     </div>
 </div>
 
