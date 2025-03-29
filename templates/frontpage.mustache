@@ -154,22 +154,23 @@ Example context (json):
                     </section>
                 </div>
             </div>
-            <div class="content_st-page_partners">
+           <div class="content_st-page_partners">
                 <div>
-                    <span class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></span>
-                    <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>
-                    <span class="logoPT"><img src="<?php echo $logourl2; ?>" alt="Logo 2"></span>
+                    <span class="aboutPT">{{#str}}aboutPT1, theme_fosbrazil{{/str}}</span>
+                    <span class="logoPT">{{#pix}}partners/partner1, theme_fosbrazil{{/pix}}</span>
+                    <span class="logoPT">{{#pix}}partners/partner2, theme_fosbrazil{{/pix}}</span>
                 </div>
                 <div>
-                    <span class="aboutPT"><?php echo get_string('aboutPT2', 'theme_fosbrazil'); ?></span>
-                    <span class="logoPT"> <img src="<?php echo $logourl3; ?>" alt="Logo 3"></span>
-                    <span class="logoPT"><img src="<?php echo $logourl4; ?>" alt="Logo 4"></span>
+                    <span class="aboutPT">{{#str}}aboutPT2, theme_fosbrazil{{/str}}</span>
+                    <span class="logoPT">{{#pix}}partners/partner3, theme_fosbrazil{{/pix}}</span>
+                    <span class="logoPT">{{#pix}}partners/partner4, theme_fosbrazil{{/pix}}</span>
                 </div>
                 <div>
-                    <span class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></span>
-                    <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>
+                    <span class="aboutPT">{{#str}}aboutPT3, theme_fosbrazil{{/str}}</span>
+                    <span class="logoPT">{{#pix}}partners/partner1, theme_fosbrazil{{/pix}}</span>
                 </div>
             </div>
+
         </div>
         <div class="myfooter">
             <div class="grap_dsgn_footer">
