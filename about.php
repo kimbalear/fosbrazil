@@ -23,7 +23,7 @@ $logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
         
 
     </div>
-    <div class="content_st-page_parners">
+    <div class="content_st-page_partners">
     <div>
         <span class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></span>
         <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>

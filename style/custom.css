@@ -862,7 +862,8 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 
 .content_st-page {
   max-width: 800px;
-  margin: 20px auto 150px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
   padding: 20px;
   background-color: #fbf8f1;
   border-radius: 8px;
@@ -875,6 +876,26 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 }
 .content_st-page .list-item {
   margin-bottom: 15px;
+}
+
+.content_st-page_partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 0;
+}
+.content_st-page_partners .aboutPT {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #386641;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.content_st-page_partners .logoPT {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #backToTopBtn {
