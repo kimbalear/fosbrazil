@@ -147,10 +147,10 @@ $string['btn_page_nav']="Back to top";
 
 // -> about
 $string['about_title']="About Us";
-$string['about_p1']="Circuitos Não é Não is an extension course based on Law 14.786/2023, which established the Não é Não Protocol. This is an important step for the protection and prevention of violence against women in leisure establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties.";
-$string['about_p2']="Developed by civil society organizations Anis - Institute of Bioethics and Fòs Feminista in partnership with the University of Brasília, the course is online and free, has national coverage, and requires no academic prerequisites.1";
-$string['about_p3']="With a duration of 50 hours and a certificate issued by the University of Brasília, the course was specially created for people who manage, work, or are involved in some way with these types of establishments, but it is open to anyone interested in the subject.";
-
+$string['about_p1']="Sobre Nós";
+$string['about_p2']="Circuitos Não é Não é um curso de extensão que tem como base a Lei 14.786/2023, que criou o Protocolo Não é Não, um importante instrumento de proteção e prevenção da violência contra mulheres em estabelecimentos de lazer que vendem bebidas alcoólicas, como bares, restaurantes, boates e festas. O curso é direcionado especialmente a profissionais que gerenciam ou trabalham nesse tipo de estabelecimentos, mas qualquer pessoa interessada no tema pode se inscrever.";
+$string['about_p3']="O curso é online, gratuito e de curta duração, e oferece certificado para participantes que o concluem. O curso tem conteúdos dinâmicos e baseados em situações de constrangimento e violência frequentemente enfrentadas por mulheres em espaços de lazer. Uma vez iniciado, o curso poderá ser concluído no prazo máximo de três meses. Não há exigência de formação mínima para a matrícula.";
+$string['about_p4']="https://circuitos.org.br/";
 // -> contact
 $string['contact_title']="Contact";
 $string['contact_p1']="We want to hear from you! If you have questions or difficulties with the course platform, or if you would like to share experiences and ideas about the implementation of the Não é Não Protocol, please write to <a href='suporte@circuitos.org.br'>suporte@circuitos.org.br</a>.";
