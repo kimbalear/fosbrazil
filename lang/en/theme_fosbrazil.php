@@ -147,12 +147,12 @@ $string['btn_page_nav']="Back to top";
 
 // -> about
 $string['about_title']="About Us";
-$string['about_p2'] = "Circuitos No es No is an extension course based on Law 14.786/2023, which created the No es No Protocol, an important tool for protecting and preventing violence against women in establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties. The course is mainly aimed at professionals who manage or work in such establishments, but anyone interested in the topic can enroll.";
+$string['about_p2'] = "Circuitos Não é Não is an extension course based on Law 14.786/2023, which created the Não é Não Protocol, an important tool for protecting and preventing violence against women in establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties. The course is mainly aimed at professionals who manage or work in such establishments, but anyone interested in the topic can enroll.";
 $string['about_p3'] = "The course is online, free, and of short duration, and offers a certificate to participants who complete it. The course has dynamic content based on situations of harassment and violence frequently faced by women in leisure spaces. Once started, the course can be completed within a maximum period of three months. No minimum education is required for enrollment.";
-$string['about_p4'] = "Carried out in partnership by the Ministry of Women and the University of Brasília (UnB), the course has technical support from the non-governmental organizations Anis – Institute of Bioethics and Fòs Feminista, and is supported by Google. For more information about Circuitos No es No, visit the website: ";
+$string['about_p4'] = "Carried out in partnership by the Ministry of Women and the University of Brasília (UnB), the course has technical support from the non-governmental organizations Anis – Institute of Bioethics and Fòs Feminista, and is supported by Google. For more information about Circuitos Não é Não, visit the website: ";
 $string['aboutPT1'] = 'Carried out by:';
 $string['aboutPT2'] = 'Technical support:';
-$string['aboutPT2'] = 'Support:';
+$string['aboutPT3'] = 'Support:';
 
 // -> contact
 $string['contact_title']="Contact";

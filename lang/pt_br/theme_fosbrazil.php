@@ -151,7 +151,7 @@ $string['about_p3']="O curso é online, gratuito e de curta duração, e oferece
 $string['about_p4']="Realizado em parceria pelo Ministério das Mulheres e a Universidade de Brasília (UnB), o curso conta com suporte técnico das organizações não-governamentais Anis – Instituto de Bioética e Fòs Feminista, e é apoiado pelo Google. Para mais informações sobre o Circuitos Não é Não, visite o site: ";
 $string['aboutPT1'] = 'Realização:';
 $string['aboutPT2'] = 'Suporte técnico:';
-$string['aboutPT2'] = 'Apoio:';
+$string['aboutPT3'] = 'Apoio:';
 
 // -> contact
 $string['contact_title']="Contato";
