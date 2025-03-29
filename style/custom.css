@@ -896,6 +896,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   justify-content: center;
   align-items: center;
   display: flex;
+  margin: 1.5em;
 }
 
 #backToTopBtn {

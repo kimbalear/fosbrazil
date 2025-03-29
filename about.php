@@ -19,9 +19,9 @@ $logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
     <div class="content_st-page">
         <p><?php echo get_string('about_p2', 'theme_fosbrazil'); ?></p>
         <p><?php echo get_string('about_p3', 'theme_fosbrazil'); ?></p>
-        <p><?php echo get_string('about_p3', 'theme_fosbrazil'); ?><a href="https://circuitos.org.br/" target="_blank">https://circuitos.org.br/</a></p>
-        
-
+        <p><?php echo get_string('about_p3', 'theme_fosbrazil'); ?>
+        <a href="https://circuitos.org.br/" target="_blank">https://circuitos.org.br/</a>
+        </p>
     </div>
     <div class="content_st-page_partners">
     <div>
@@ -38,9 +38,7 @@ $logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
         <span class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></span>
         <span class="logoPT"><img src="<?php echo $logourl1; ?>" alt="Logo 1"></span>
     </div>
+    </div>
 </div>
-
-</div>
-
 <?php
 echo $OUTPUT->footer();
