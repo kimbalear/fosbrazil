@@ -147,10 +147,13 @@ $string['btn_page_nav']="Back to top";
 
 // -> about
 $string['about_title']="About Us";
-$string['about_p1']="Sobre Nós";
-$string['about_p2']="Circuitos Não é Não é um curso de extensão que tem como base a Lei 14.786/2023, que criou o Protocolo Não é Não, um importante instrumento de proteção e prevenção da violência contra mulheres em estabelecimentos de lazer que vendem bebidas alcoólicas, como bares, restaurantes, boates e festas. O curso é direcionado especialmente a profissionais que gerenciam ou trabalham nesse tipo de estabelecimentos, mas qualquer pessoa interessada no tema pode se inscrever.";
-$string['about_p3']="O curso é online, gratuito e de curta duração, e oferece certificado para participantes que o concluem. O curso tem conteúdos dinâmicos e baseados em situações de constrangimento e violência frequentemente enfrentadas por mulheres em espaços de lazer. Uma vez iniciado, o curso poderá ser concluído no prazo máximo de três meses. Não há exigência de formação mínima para a matrícula.";
-$string['about_p4']="Realizado em parceria pelo Ministério das Mulheres e a Universidade de Brasília (UnB), o curso conta com suporte técnico das organizações não-governamentais Anis – Instituto de Bioética e Fòs Feminista, e é apoiado pelo Google. Para mais informações sobre o Circuitos Não é Não, visite o site: ";
+$string['about_p2'] = "Circuitos No es No is an extension course based on Law 14.786/2023, which created the No es No Protocol, an important tool for protecting and preventing violence against women in establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties. The course is mainly aimed at professionals who manage or work in such establishments, but anyone interested in the topic can enroll.";
+$string['about_p3'] = "The course is online, free, and of short duration, and offers a certificate to participants who complete it. The course has dynamic content based on situations of harassment and violence frequently faced by women in leisure spaces. Once started, the course can be completed within a maximum period of three months. No minimum education is required for enrollment.";
+$string['about_p4'] = "Carried out in partnership by the Ministry of Women and the University of Brasília (UnB), the course has technical support from the non-governmental organizations Anis – Institute of Bioethics and Fòs Feminista, and is supported by Google. For more information about Circuitos No es No, visit the website: ";
+$string['aboutPT1'] = 'Carried out by:';
+$string['aboutPT2'] = 'Technical support:';
+$string['aboutPT2'] = 'Support:';
+
 // -> contact
 $string['contact_title']="Contact";
 $string['contact_p1']="We want to hear from you! If you have questions or difficulties with the course platform, or if you would like to share experiences and ideas about the implementation of the Não é Não Protocol, please write to <a href='suporte@circuitos.org.br'>suporte@circuitos.org.br</a>.";

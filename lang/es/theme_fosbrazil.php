@@ -146,9 +146,12 @@ $string['btn_page_nav']="Volver al inicio";
 
 // -> about
 $string['about_title']="Sobre Nosotros";
-$string['about_p1']="Circuitos Não é Não es un curso de extensión basado en la Ley 14.786/2023, que creó el Protocolo Não é Não. Este es un paso importante para la protección y prevención de la violencia contra las mujeres en establecimientos de ocio que venden bebidas alcohólicas, como bares, restaurantes, discotecas y fiestas.";
-$string['about_p2']="Desarrollado por las organizaciones de la sociedad civil Anis - Instituto de Bioética y Fòs Feminista en asociación con la Universidad de Brasilia, el curso es en línea y gratuito, tiene cobertura nacional y no requiere ningún requisito académico previo.";
-$string['about_p3']="Con una duración de 50 horas y un certificado emitido por la Universidad de Brasilia, el curso fue creado especialmente para personas que gestionan, trabajan o están involucradas de alguna manera en este tipo de establecimientos, pero está abierto a todas las personas que tengan interés en el tema.";
+$string['about_p2'] = "Circuitos No es No es un curso de extensión basado en la Ley 14.786/2023, que creó el Protocolo No es No, una importante herramienta de protección y prevención de la violencia contra las mujeres en establecimientos de ocio que venden bebidas alcohólicas, como bares, restaurantes, discotecas y fiestas. El curso está dirigido especialmente a profesionales que gestionan o trabajan en este tipo de establecimientos, pero cualquier persona interesada en el tema puede inscribirse.";
+$string['about_p3'] = "El curso es online, gratuito y de corta duración, y ofrece un certificado para los participantes que lo finalicen. El curso tiene contenidos dinámicos y basados en situaciones de acoso y violencia que enfrentan con frecuencia las mujeres en espacios de ocio. Una vez iniciado, el curso podrá ser completado en un plazo máximo de tres meses. No se exige formación mínima para la matrícula.";
+$string['about_p4'] = "Realizado en colaboración con el Ministerio de las Mujeres y la Universidad de Brasilia (UnB), el curso cuenta con el apoyo técnico de las organizaciones no gubernamentales Anis – Instituto de Bioética y Fòs Feminista, y es apoyado por Google. Para más información sobre Circuitos No es No, visita el sitio web: ";$string['aboutPT1'] = 'Realización:';
+$string['aboutPT2'] = 'Soporte técnico:';
+$string['aboutPT2'] = 'Apoyo:';
+
 
 // -> contact
 $string['contact_title']="Contato";
