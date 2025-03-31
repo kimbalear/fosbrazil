@@ -147,7 +147,10 @@ Example context (json):
                                 </div>
                             </div>
                         {{/overflow}}
-                                   <div class="content_st-page_partners">
+                        {{{ output.main_content }}}
+                        {{{ output.activity_navigation }}}
+
+                        <div class="content_st-page_partners">
                 <div>
                     <span class="aboutPT">{{#str}}aboutPT1, theme_fosbrazil{{/str}}</span>
                     <span class="logoPT">{{#pix}}partners/partner1, theme_fosbrazil{{/pix}}</span>
@@ -162,13 +165,11 @@ Example context (json):
                     <span class="aboutPT">{{#str}}aboutPT3, theme_fosbrazil{{/str}}</span>
                     <span class="logoPT">{{#pix}}partners/partner1, theme_fosbrazil{{/pix}}</span>
                 </div>
-            </div>
-                        {{{ output.main_content }}}
-                        {{{ output.activity_navigation }}}
                         {{{ output.course_content_footer }}}
 
                     </section>
                 </div>
+            </div>
             </div>
 
         </div>
