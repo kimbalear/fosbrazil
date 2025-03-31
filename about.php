@@ -9,10 +9,9 @@ $PAGE->set_pagelayout('standard'); // Define el layout de la página.
 
 echo $OUTPUT->header();
 $logourl1 = $OUTPUT->image_url('partners/partner1', 'theme_fosbrazil');
-$logourl2 = $OUTPUT->image_url('partners/partner1', 'theme_fosbrazil');
-$logourl3 = $OUTPUT->image_url('partners/partner2', 'theme_fosbrazil');
-$logourl4 = $OUTPUT->image_url('partners/partner3', 'theme_fosbrazil');
-$logourl5 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
+$logourl2 = $OUTPUT->image_url('partners/partner2', 'theme_fosbrazil');
+$logourl3 = $OUTPUT->image_url('partners/partner3', 'theme_fosbrazil');
+$logourl4 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
 ?>
 
 <div class="my-static-content">
