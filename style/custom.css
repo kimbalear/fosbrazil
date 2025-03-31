@@ -1130,9 +1130,10 @@ div[role=main] iframe {
 .logoPT .icon {
   max-width: 110px !important;
   max-height: 90px !important;
-  margin: auto;
+  margin: 0.5em auto;
   padding: auto;
   box-sizing: 0;
+  display: block;
 }
 
 /*# sourceMappingURL=custom.css.map */
