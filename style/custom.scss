@@ -280,3 +280,31 @@ div[role="main"] iframe {
       box-sizing: 0; 
   }
 }
+
+.content_st-page_partners {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 0;
+
+.aboutPT {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #386641;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.logoPT {
+  .icon {
+      max-width: 110px !important;
+      max-height: 90px !important;
+      margin: auto;
+      padding: auto;
+      box-sizing: 0; 
+  }
+}
+}
