@@ -263,3 +263,20 @@ div[role="main"] iframe {
 .availability-excerpt {
   color: $D1_10;
 }
+
+// Styles for the partner icons on the landing page
+#page-wrapper {
+  #page {
+      display: contents !important;
+  }
+}
+
+.logoPT {
+  .icon {
+      max-width: 110px !important;
+      max-height: 100px !important;
+      margin: auto;
+      padding: auto;
+      box-sizing: 0; 
+  }
+}
