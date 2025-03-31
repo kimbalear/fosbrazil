@@ -1121,4 +1121,16 @@ div[role=main] iframe {
   color: #393536;
 }
 
+#page-wrapper #page {
+  display: contents !important;
+}
+
+.logoPT .icon {
+  max-width: 110px !important;
+  max-height: 90px !important;
+  margin: auto;
+  padding: auto;
+  box-sizing: 0;
+}
+
 /*# sourceMappingURL=custom.css.map */
