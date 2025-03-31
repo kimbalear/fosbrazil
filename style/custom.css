@@ -1126,7 +1126,8 @@ div[role=main] iframe {
   align-items: center;
   display: flex;
 }
-.content_st-page_partners .logoPT .icon {
+
+.logoPT .icon {
   max-width: 110px !important;
   max-height: 90px !important;
   margin: auto;
