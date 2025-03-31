@@ -77,6 +77,13 @@
   align-items: center;
   display: flex;
   margin: 1.5em;
+  .img {
+    max-width: 110px !important;
+    max-height: 90px !important;
+    margin: auto;
+    padding: auto;
+    box-sizing: 0; 
+}
 }
 }
 

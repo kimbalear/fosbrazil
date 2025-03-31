@@ -898,6 +898,13 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   display: flex;
   margin: 1.5em;
 }
+.content_st-page_partners .logoPT .img {
+  max-width: 110px !important;
+  max-height: 90px !important;
+  margin: auto;
+  padding: auto;
+  box-sizing: 0;
+}
 
 #backToTopBtn {
   position: fixed;
