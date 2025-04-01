@@ -1100,10 +1100,11 @@ div[role=main] iframe {
   color: #393536;
 }
 
-#page-wrapper #page {
-  display: contents !important;
-}
-
+/* #page-wrapper {
+  #page {
+      display: contents !important;
+  }
+}*/
 .logoPT .icon {
   max-width: 110px !important;
   max-height: 90px !important;
