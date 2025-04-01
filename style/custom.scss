@@ -265,11 +265,14 @@ div[role="main"] iframe {
 }
 
 // Styles for the partner icons on the landing page
-/* #page-wrapper {
-  #page {
-      display: contents !important;
-  }
-}*/
+#page-wrapper {
+  #page { 
+    #page-content {
+       display: contents !important;
+      }
+    }
+     
+}
 
 .logoPT {
   .icon {
