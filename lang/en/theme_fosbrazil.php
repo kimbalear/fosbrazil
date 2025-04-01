@@ -41,8 +41,8 @@ $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS co
 // Footer
 
 $string['footer_menu1Item1'] = 'Privacy Policy';
-$string['footer_menu1Item2'] = 'About Circuits'; 
-$string['footer_menu1Item3'] = 'Contact'; 
+$string['footer_menu1Item2'] = 'About Us'; 
+$string['footer_menu1Item3'] = 'Contact Us'; 
 
 $string['footer_copyright'] = 'Copyright';
 
