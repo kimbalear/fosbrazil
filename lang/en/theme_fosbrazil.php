@@ -41,8 +41,8 @@ $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS co
 // Footer
 
 $string['footer_menu1Item1'] = 'Privacy Policy';
-$string['footer_menu1Item2'] = 'About Circuits'; 
-$string['footer_menu1Item3'] = 'Contact'; 
+$string['footer_menu1Item2'] = 'About Us'; 
+$string['footer_menu1Item3'] = 'Contact Us'; 
 
 $string['footer_copyright'] = 'Copyright';
 
@@ -147,9 +147,12 @@ $string['btn_page_nav']="Back to top";
 
 // -> about
 $string['about_title']="About Us";
-$string['about_p1']="Circuitos Não é Não is an extension course based on Law 14.786/2023, which established the Não é Não Protocol. This is an important step for the protection and prevention of violence against women in leisure establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties.";
-$string['about_p2']="Developed by civil society organizations Anis - Institute of Bioethics and Fòs Feminista in partnership with the University of Brasília, the course is online and free, has national coverage, and requires no academic prerequisites.1";
-$string['about_p3']="With a duration of 50 hours and a certificate issued by the University of Brasília, the course was specially created for people who manage, work, or are involved in some way with these types of establishments, but it is open to anyone interested in the subject.";
+$string['about_p2'] = "Circuitos Não é Não is an extension course based on Law 14.786/2023, which created the Não é Não Protocol, an important tool for protecting and preventing violence against women in establishments that sell alcoholic beverages, such as bars, restaurants, nightclubs, and parties. The course is mainly aimed at professionals who manage or work in such establishments, but anyone interested in the topic can enroll.";
+$string['about_p3'] = "The course is online, free, and of short duration, and offers a certificate to participants who complete it. The course has dynamic content based on situations of harassment and violence frequently faced by women in leisure spaces. Once started, the course can be completed within a maximum period of three months. No minimum education is required for enrollment.";
+$string['about_p4'] = "Carried out in partnership by the Ministry of Women and the University of Brasília (UnB), the course has technical support from the non-governmental organizations Anis – Institute of Bioethics and Fòs Feminista, and is supported by Google. For more information about Circuitos Não é Não, visit the website: ";
+$string['aboutPT1'] = 'Carried out by:';
+$string['aboutPT2'] = 'Technical support:';
+$string['aboutPT3'] = 'Support:';
 
 // -> contact
 $string['contact_title']="Contact";
