@@ -17,6 +17,7 @@
 @import "components/page_footer.scss";
 @import "components/components.scss";
 @import "components/btns.scss";
+@import "components/partners.scss";
 
 @import "static_pages/privacy_policy.scss";
 
@@ -24,6 +25,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   color: $D1_10;
+  height: auto;
 
   a {
     color: $R1_00;
@@ -266,50 +268,9 @@ div[role="main"] iframe {
 
 // Styles for the partner icons on the landing page
 #page-wrapper {
-  #page { 
+  #page {
     #page-content {
-       display: contents !important;
-      }
+      display: contents !important;
     }
-     
-}
-
-.logoPT {
-  .icon {
-      max-width: 110px !important;
-      max-height: 90px !important;
-      margin: auto;
-      padding: auto;
-      box-sizing: 0; 
-  }
-}
-
-.content_st-page_partners {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 0;
-
-.aboutPT {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #386641;
-  padding: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-}
-}
-
-
-.logoPT {
-  .icon {
-    max-width: 110px !important;
-    max-height: 90px !important;
-    margin: 0.5em auto;
-    padding: auto;
-    box-sizing: 0;
-    display: block;
   }
 }
