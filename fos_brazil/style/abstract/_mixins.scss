@@ -1,0 +1,104 @@
+// Responsive mixins
+
+@mixin desktop {
+  @media only screen and (min-width: 822px) {
+    // Ajusta el punto de quiebre según sea necesario
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 821px) {
+    // Ajusta el punto de quiebre según sea necesario
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin brk440 {
+  @media only screen and (max-width: 440px) {
+    @content;
+  }
+}
+
+@mixin brk475 {
+  @media only screen and (max-width: 475px) {
+    @content;
+  }
+}
+
+@mixin brk515 {
+  @media only screen and (max-width: 515px) {
+    @content;
+  }
+}
+
+@mixin brk580 {
+  @media only screen and (max-width: 580px) {
+    @content;
+  }
+}
+
+@mixin brk575 {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin brk713 {
+  @media only screen and (max-width: 711px) {
+    @content;
+  }
+}
+
+@mixin brk767-98 {
+  @media only screen and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin brk821 {
+  @media only screen and (max-width: 821px) {
+    @content;
+  }
+}
+
+@mixin brk793 {
+  @media only screen and (max-width: 793px) {
+    @content;
+  }
+}
+
+// tablet
+@mixin tablet {
+  @media only screen and (max-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+// mobile
+
+// portrait mobile
+@mixin mobile_prt {
+  @media only screen and (max-width: 914px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+// landscape mobile
+@mixin mobile_lnd {
+  @media only screen and (max-width: 914px) and (orientation: landscape) {
+    @content;
+  }
+}

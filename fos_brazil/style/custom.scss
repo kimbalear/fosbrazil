@@ -1,0 +1,276 @@
+@import "abstract/vars.scss";
+@import "abstract/mixins";
+@import "abstract/typography.scss";
+
+@import "layouts/frontpage.scss";
+@import "layouts/login.scss";
+
+@import "components/footer.scss";
+@import "components/card.scss";
+@import "components/con_img.scss";
+@import "components/cont_icon_frs.scss";
+@import "components/smpl_card.scss";
+@import "components/card_body.scss";
+@import "components/navbar.scss";
+@import "components/page_header.scss";
+@import "components/moremenu";
+@import "components/page_footer.scss";
+@import "components/components.scss";
+@import "components/btns.scss";
+@import "components/partners.scss";
+
+@import "static_pages/privacy_policy.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: $D1_10;
+  height: auto;
+
+  a {
+    color: $R1_00;
+
+    &:hover {
+      color: $R1_00;
+    }
+  }
+}
+
+#page-content {
+  background-color: white;
+  min-height: 100% !important;
+  #region-main-box {
+    min-height: 100% !important;
+
+    #region-main {
+      min-height: 100% !important;
+
+      div[role="main"] {
+        min-height: 100% !important;
+      }
+    }
+  }
+}
+
+.main-inner {
+  padding: 0px !important;
+
+  @include brk767-98 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px !important;
+  }
+}
+
+.custom_wrapper {
+  max-width: 788px !important;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+div[role="main"] {
+  padding: 0 16px !important;
+}
+
+.block {
+  max-width: 788px !important;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.aabtn.focus,
+.aabtn:focus,
+.btn-link.focus,
+.btn-link:focus,
+.nav-link.focus,
+.nav-link:focus,
+.editor_atto_toolbar button.focus,
+.editor_atto_toolbar button:focus,
+.editor_atto_toolbar .atto_toolbar_row.focus,
+.editor_atto_toolbar .atto_toolbar_row:focus,
+[role="button"].focus,
+[role="button"]:focus,
+.list-group-item-action.focus,
+.list-group-item-action:focus,
+input[type="checkbox"].focus,
+input[type="checkbox"]:focus,
+input[type="radio"].focus,
+input[type="radio"]:focus,
+input[type="file"].focus,
+input[type="file"]:focus,
+input[type="image"].focus,
+input[type="image"]:focus,
+.sr-only-focusable.focus,
+.sr-only-focusable:focus,
+a.dropdown-toggle.focus,
+a.dropdown-toggle:focus,
+.moodle-dialogue-base .closebutton.focus,
+.moodle-dialogue-base .closebutton:focus,
+button.close.focus,
+button.close:focus,
+.form-autocomplete-selection.focus,
+.form-autocomplete-selection:focus,
+[role="treeitem"]:not([aria-expanded="true"]).focus,
+[role="treeitem"]:not([aria-expanded="true"]):focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.page-context-header {
+  margin-left: 21px !important;
+}
+
+.list-group-item.active {
+  color: $G1_00 !important;
+  font-weight: 600 !important;
+  background-color: $G1_90 !important;
+  border-color: $G1_00 !important;
+}
+
+.activity-add,
+.block-add {
+  color: $G3_00;
+  background-color: white;
+  border-color: $G3_00;
+  border-width: 1px;
+  width: 100%;
+  &:hover {
+    background-color: $G3_00;
+    color: white;
+  }
+}
+
+.activity-add .pluscontainer,
+.block-add .pluscontainer {
+  border: 1px solid $G3_00;
+}
+
+.text-primary {
+  color: $G1_00 !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: white !important;
+  background-color: $G1_00 !important;
+  border-color: $G2_00 !important;
+}
+
+.fa {
+  color: $G1_60;
+}
+
+// custom-scroolbar
+/* Scrollbar WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* Scrollbar en hover para Firefox */
+*::-webkit-scrollbar-thumb:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+
+#region-main {
+  padding-left: 16px !important;
+}
+
+#page {
+  min-height: 100vh !important;
+}
+
+// create account
+div[role="main"] {
+  padding: 0 !important;
+  overflow-x: hidden;
+  .signupform {
+    form {
+      fieldset {
+        .fcontainer {
+          > div:last-child {
+            > div:nth-child(2) {
+              div {
+                flex-direction: row;
+              }
+            }
+          }
+
+          #fitem_id_profile_field_dataofbirth {
+            > div:nth-child(2) {
+              .fdate_selector {
+                flex-direction: row !important;
+              }
+            }
+          }
+        }
+      }
+
+      .custom-select {
+        width: 100%;
+      }
+
+      #fgroup_id_buttonar {
+        > div:nth-child(2) {
+          > div:nth-child(1) {
+            div {
+              div {
+                width: 100% !important;
+
+                span {
+                  input {
+                    width: 100% !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//H5P interactive videos are displayed too large. Reduce the max width and center it.
+div[role="main"] iframe {
+  display: block;
+  //max-width: 800px;
+  margin: 0 auto !important;
+}
+
+.collapsed-content {
+  color: $R1_00;
+}
+.availability-excerpt {
+  color: $D1_10;
+}
+
+// Styles for the partner icons on the landing page
+#page-wrapper {
+  #page {
+    #page-content {
+      display: contents !important;
+    }
+  }
+}

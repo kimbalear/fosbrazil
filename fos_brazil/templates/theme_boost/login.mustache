@@ -1,0 +1,33 @@
+{{> theme_boost/head }}
+
+<body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
+
+<div id="page-wrapper" class="page_wrapper_login">
+
+    {{{ output.standard_top_of_body_html }}}
+
+    <div class="login_page">
+    <img src="{{{graf_bg1}}}" class="graf_bg">
+    <div class="login_page_logo">
+        <img src="{{{nao_e_nao}}}" class="nao_e_nao">
+    </div>
+        <div class="lg_cnt">
+            {{{ output.main_content }}}
+        </div>
+    </div>
+    {{> theme_boost/footer }}
+</div>
+
+</body>
+</html>
+{{#js}}
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+});
+{{/js}}
+{{#js}}
+require(['theme_fosbrazil/init'], (module) => module.init());
+require(['theme_fosbrazil/validateRegistration'], (module) => module.validate());
+{{/js}}
