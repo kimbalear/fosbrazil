@@ -117,10 +117,12 @@ $templatecontext = [
     'privacy_policy_url' => new moodle_url('/theme/fosbrazil/privacy_policy.php'),
     'about_url' => new moodle_url('/theme/fosbrazil/about.php'),
     'contact_url' => new moodle_url('/theme/fosbrazil/contact.php'),
+    'partner0' =>$OUTPUT->image_url('partners/partner0', 'theme_fosbrazil'),
     'partner1' =>$OUTPUT->image_url('partners/partner1', 'theme_fosbrazil'),
     'partner2' =>$OUTPUT->image_url('partners/partner2', 'theme_fosbrazil'),
     'partner3' =>$OUTPUT->image_url('partners/partner3', 'theme_fosbrazil'),
-    'partner4' =>$OUTPUT->image_url('partners/partner4', 'theme_fosbrazil')
+    'partner4' =>$OUTPUT->image_url('partners/partner4', 'theme_fosbrazil'),
+    'partner5' =>$OUTPUT->image_url('partners/partner5', 'theme_fosbrazil'),
 ];
 
 echo $OUTPUT->render_from_template('theme_fosbrazil/frontpage', $templatecontext);
