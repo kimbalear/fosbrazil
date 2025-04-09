@@ -11,14 +11,14 @@
 }
 
 .likertScaleText {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-    width: clamp(4rem, 10vw, 9rem);
-    height: clamp(6rem, 12vh, 9rem) !important;
-    padding: 0.5rem 1rem !important;
-    border-bottom: 1px solid black;
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    word-wrap: break-word;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        width: clamp(2.5vw, 4vw, 9vw) !important;
+        height: clamp(6vh, 10vh, 14vh) !important;
+        padding: clamp(2.5rem, 3rem, 4rem) !important;
+        border-bottom: 1px solid #000;
+        font-size: clamp(0.5rem, 1rem, 1.5rem);
+        word-wrap: break-word;
 }

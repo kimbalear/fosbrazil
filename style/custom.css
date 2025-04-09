@@ -853,18 +853,19 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   max-width: 10rem;
   padding: 0.5rem;
   box-sizing: border-box;
-  height: 12vh;
+  height: 12.5vh;
   margin: auto;
   display: flex;
   align-items: center;
 }
 .content_st-page_partners > div .logoPT-cnt img.logo {
-  max-height: 91px;
+  max-height: 90px;
   width: auto;
   height: auto;
   object-fit: contain;
   margin: auto;
   min-height: 24px;
+  overflow: auto;
 }
 
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
@@ -882,11 +883,11 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   justify-content: center;
   align-items: start;
   text-align: center;
-  width: clamp(4rem, 10vw, 9rem);
-  height: clamp(6rem, 12vh, 9rem) !important;
-  padding: 0.5rem 1rem !important;
-  border-bottom: 1px solid black;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  width: 4vw !important;
+  height: 10vh !important;
+  padding: 3rem !important;
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
   word-wrap: break-word;
 }
 

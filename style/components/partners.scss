@@ -21,20 +21,21 @@
 
         .logoPT-cnt {
             max-width: 10rem;
-            padding: .5rem;
+            padding: 0.5rem;
             box-sizing: border-box;
-            height: 12vh;
+            height: 12.5vh;
             margin: auto;
             display: flex;
             align-items: center;
 
             img.logo {
-                max-height: 91px;
+                max-height: 90px;
                 width: auto;
                 height: auto;
                 object-fit: contain;
                 margin: auto;
                 min-height: 24px;
+                overflow: auto
             }
         }
     }
