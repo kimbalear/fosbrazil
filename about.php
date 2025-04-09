@@ -28,7 +28,7 @@ echo $OUTPUT->header();
         <div class="content_st-page_partners">
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl0; ?>" alt="Logo 1"></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl2; ?>" alt="Logo 2"></div>
             </div>
             <div>
@@ -39,6 +39,7 @@ echo $OUTPUT->header();
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 1"></div>
             </div>
         </div>
     </div>
