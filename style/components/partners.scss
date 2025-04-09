@@ -29,12 +29,12 @@
             align-items: center;
 
             img.logo {
-                max-width: 100%;
-                max-height: 24mm !important;
+                max-height: 91px;
                 width: auto;
                 height: auto;
                 object-fit: contain;
                 margin: auto;
+                min-height: 24px;
             }
         }
     }

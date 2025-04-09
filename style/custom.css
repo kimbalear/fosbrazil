@@ -859,12 +859,35 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   align-items: center;
 }
 .content_st-page_partners > div .logoPT-cnt img.logo {
-  max-width: 100%;
-  max-height: 24mm !important;
+  max-height: 91px;
   width: auto;
   height: auto;
   object-fit: contain;
   margin: auto;
+  min-height: 24px;
+}
+
+.feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
+  margin: 0.5rem 0 !important;
+}
+
+.likertScaleText {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  width: clamp(4rem, 10vw, 9rem);
+  height: clamp(6rem, 12vh, 9rem) !important;
+  padding: 0.5rem 1rem !important;
+  border-bottom: 1px solid black;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  word-wrap: break-word;
 }
 
 .title_st-page {

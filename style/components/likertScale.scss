@@ -1,0 +1,24 @@
+.feedback-item-multichoice.multichoice-horizontal { 
+    .form-check-inline.form-check-label.fitem {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    .form-check-inline .form-check-input {
+    margin: 0.50rem 0 !important;
+}
+}
+
+.likertScaleText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    width: clamp(4rem, 10vw, 9rem);
+    height: clamp(6rem, 12vh, 9rem) !important;
+    padding: 0.5rem 1rem !important;
+    border-bottom: 1px solid black;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    word-wrap: break-word;
+}
