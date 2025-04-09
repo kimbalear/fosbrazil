@@ -8,10 +8,12 @@ $PAGE->set_heading(get_string('about_title', 'theme_fosbrazil'));
 $PAGE->set_pagelayout('standard'); // Define el layout de la página.
 
 
+$logourl0 = $OUTPUT->image_url('partners/partner0', 'theme_fosbrazil');
 $logourl1 = $OUTPUT->image_url('partners/partner1', 'theme_fosbrazil');
 $logourl2 = $OUTPUT->image_url('partners/partner2', 'theme_fosbrazil');
 $logourl3 = $OUTPUT->image_url('partners/partner3', 'theme_fosbrazil');
 $logourl4 = $OUTPUT->image_url('partners/partner4', 'theme_fosbrazil');
+$logourl5 = $OUTPUT->image_url('partners/partner5', 'theme_fosbrazil');
 
 echo $OUTPUT->header();
 ?>
@@ -28,7 +30,7 @@ echo $OUTPUT->header();
         <div class="content_st-page_partners">
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl0; ?>" alt="Logo 1"></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl0; ?>" alt="Logo 0"></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl2; ?>" alt="Logo 2"></div>
             </div>
             <div>
@@ -39,7 +41,7 @@ echo $OUTPUT->header();
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 1"></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
             </div>
         </div>
     </div>
