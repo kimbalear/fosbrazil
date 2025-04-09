@@ -850,17 +850,21 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   padding: 0.5rem;
 }
 .content_st-page_partners > div .logoPT-cnt {
-  width: 100%;
+  max-width: 10rem;
   padding: 0.5rem;
   box-sizing: border-box;
+  height: 12vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 .content_st-page_partners > div .logoPT-cnt img.logo {
   max-width: 100%;
-  max-height: 120px;
+  max-height: 24mm !important;
   width: auto;
   height: auto;
   object-fit: contain;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .title_st-page {
