@@ -883,7 +883,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   justify-content: center;
   text-align: center;
   width: 4vw !important;
-  height: 10vh !important;
+  height: 6vh !important;
   padding: 3.2rem !important;
   border-bottom: 1px solid #000;
   font-size: 1rem;
