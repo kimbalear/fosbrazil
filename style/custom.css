@@ -871,11 +871,11 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
   display: inline-flex;
   flex-direction: column-reverse;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
 }
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
-  margin: 0.5rem 0 !important;
+  margin: 0.5rem 0;
 }
 
 .likertScaleText {
@@ -883,9 +883,9 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   justify-content: center;
   align-items: start;
   text-align: center;
-  width: 4vw !important;
-  height: 10vh !important;
-  padding: 3rem !important;
+  width: 4vw;
+  height: 10vh;
+  padding: 3.2rem;
   border-bottom: 1px solid #000;
   font-size: 1rem;
   word-wrap: break-word;
