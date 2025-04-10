@@ -2,23 +2,26 @@
     .form-check-inline.form-check-label.fitem {
     display: inline-flex;
     flex-direction: column-reverse;
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
     .form-check-inline .form-check-input {
-    margin: 0.50rem 0;
+    margin: 0.50rem 0 !important;
 }
 }
 
 .likertScaleText {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        text-align: center;
-        width: clamp(2.5vw, 4vw, 9vw);
-        height: clamp(6vh, 10vh, 14vh);
-        padding: clamp(2.5rem, 3.2rem, 4rem);
-        border-bottom: 1px solid #000;
-        font-size: clamp(0.5rem, 1rem, 1.5rem);
-        word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: clamp(2.5vw, 4vw, 9vw) !important;
+    height: clamp(6vh, 10vh, 14vh) !important;
+    padding: clamp(2.5rem, 3.2rem, 4rem) !important;
+    border-bottom: 1px solid #000;
+    font-size: 1rem;
+    word-wrap: break-word;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }

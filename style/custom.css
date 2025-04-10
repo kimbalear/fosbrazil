@@ -871,24 +871,27 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
   display: inline-flex;
   flex-direction: column-reverse;
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 !important;
 }
 
 .likertScaleText {
   display: flex;
   justify-content: center;
-  align-items: start;
   text-align: center;
-  width: 4vw;
-  height: 10vh;
-  padding: 3.2rem;
+  width: 4vw !important;
+  height: 10vh !important;
+  padding: 3.2rem !important;
   border-bottom: 1px solid #000;
   font-size: 1rem;
   word-wrap: break-word;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .title_st-page {
