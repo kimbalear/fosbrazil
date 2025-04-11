@@ -2,40 +2,69 @@
     .form-check-inline.form-check-label.fitem {
     display: inline-flex;
     flex-direction: column-reverse;
-    padding: 0 !important;
-    margin: 0 !important;
+    /*padding: 0 !important;*/
+    margin: auto;
 }
     .form-check-inline .form-check-input {
-    margin: 0.50rem 0 !important;
+        position: static;
+        margin-top: 0.6rem;
+        margin-right: 0;
+        margin-left: 0;
+        transform: scale(1.1);
+
 }
 }
 
 .likertScaleText {
+
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 5vw;
+    width: 9vw;
     height: 6.5vh;
     padding-bottom:  2.5rem;
     padding-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 1.5rem;
+    padding-left: 2.9rem;
+    padding-right: 2.9rem;
+    font-size: 0.9rem;
     border-bottom: 1px solid #000;
     word-wrap: break-word;
     align-items: flex-start;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    
+ 
+    @mixin brk580 {
+        .feedback-item-multichoice.multichoice-horizontal { 
+            .form-check-inline .form-check-input {
+                transform: scale(1);
+        }
+        }
+        .likertScaleText {
+            padding-bottom:  2rem;
+            padding-top: 3rem;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+            font-size: 0.58rem;
+        }
+        
+      }
 
   @include mobile {
+    @media only screen and (max-width: 390px) {
+        // Ajusta el punto de quiebre según sea necesario
+        .likertScaleText {
+            height: 6.5vh;
+            padding-bottom: 1.5rem;
+            padding-top: 2.2rem;
+            padding-left: 1.7rem;
+            padding-right: 1.7rem;
+            font-size: 0.55rem;
+            
+        }
+      }
+    
   }
 
  
-  @include brk515 {
-  }
-
-  @include portrait {
-  }
 }
