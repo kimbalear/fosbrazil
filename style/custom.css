@@ -851,12 +851,12 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
 }
 .content_st-page_partners > div .logoPT-cnt {
   max-width: 10rem;
-  padding: 0.5rem;
   box-sizing: border-box;
-  height: 12.5vh;
+  height: 13vh;
   margin: auto;
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .content_st-page_partners > div .logoPT-cnt img.logo {
   max-height: 90px;
@@ -866,6 +866,8 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   margin: auto;
   min-height: 24px;
   overflow: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
