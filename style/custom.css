@@ -908,9 +908,9 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   .likertScaleText {
     padding-bottom: 1.8rem;
     padding-top: 2rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    font-size: 0.58rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 0.72rem;
   }
 }
 @media only screen and (max-width: 440px) and (max-width: 440px) {
