@@ -43,8 +43,8 @@
     }
   
     .likertScaleText {
-      padding-bottom: 2rem;
-      padding-top: 3rem;
+      padding-bottom: 1.8rem;
+      padding-top: 2rem;
       padding-left: 1.8rem;
       padding-right: 1.8rem;
       font-size: 0.58rem;
@@ -53,15 +53,15 @@
 }
   
   // Media query para mobile
-  @include mobile {
-      @media only screen and (max-width: 390px) {
+  @include brk440 {
+      @media only screen and (max-width: 440px) {
     .likertScaleText {
-      height: 6.5vh;
-      padding-bottom: 1.5rem;
-      padding-top: 2.2rem;
-      padding-left: 1.7rem;
-      padding-right: 1.7rem;
-      font-size: 0.55rem;
-    }}
+        padding-bottom: 1.5rem;
+        padding-top: 2.2rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        font-size: .5rem;
+    }
+}
   }
   
