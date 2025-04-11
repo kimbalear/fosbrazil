@@ -868,20 +868,6 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   overflow: auto;
 }
 
-.feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  /*padding: 0 !important;*/
-  margin: auto;
-}
-.feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
-  position: static;
-  margin-top: 0.6rem;
-  margin-right: 0;
-  margin-left: 0;
-  transform: scale(1.1);
-}
-
 .likertScaleText {
   display: flex;
   justify-content: center;
@@ -900,8 +886,21 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   flex-wrap: wrap;
   flex-direction: row;
 }
-@media only screen and (max-width: 821px) and (max-width: 390px) {
-  .likertScaleText .likertScaleText {
+
+@media only screen and (max-width: 580px) {
+  .feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
+    transform: scale(1);
+  }
+  .likertScaleText {
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    font-size: 0.58rem;
+  }
+}
+@media only screen and (max-width: 821px) {
+  .likertScaleText {
     height: 6.5vh;
     padding-bottom: 1.5rem;
     padding-top: 2.2rem;
@@ -910,7 +909,6 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
     font-size: 0.55rem;
   }
 }
-
 .title_st-page {
   background-color: #dbecd5;
   color: #386641;
