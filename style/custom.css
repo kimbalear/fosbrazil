@@ -868,6 +868,20 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   overflow: auto;
 }
 
+.feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  /*padding: 0 !important;*/
+  margin: auto !important;
+}
+.feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0.6rem;
+  margin-right: 0;
+  margin-left: 0;
+  transform: scale(1.1);
+}
+
 .likertScaleText {
   display: flex;
   justify-content: center;
@@ -887,7 +901,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   flex-direction: row;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) and (max-width: 580px) {
   .feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
     transform: scale(1);
   }
@@ -899,7 +913,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
     font-size: 0.58rem;
   }
 }
-@media only screen and (max-width: 821px) {
+@media only screen and (max-width: 821px) and (max-width: 390px) {
   .likertScaleText {
     height: 6.5vh;
     padding-bottom: 1.5rem;
