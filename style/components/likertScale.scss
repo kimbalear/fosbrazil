@@ -1,3 +1,5 @@
+@import '/abstract/mixins';
+
 .feedback-item-multichoice.multichoice-horizontal { 
     .form-check-inline.form-check-label.fitem {
     display: inline-flex;
@@ -14,17 +16,28 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    width: clamp(2.5vw, 4vw, 9vw) !important;
-    height: clamp(4vh, 6vh, 8vh) !important;
-    padding-bottom: clamp(2rem, 2.5rem, 3rem) !important;
-    padding-top: clamp(2rem, 3rem, 3.5rem) !important;
-    padding-left: clamp(2.2rem, 3rem, 4rem) !important;
-    padding-right: clamp(2.2rem, 3rem, 4rem) !important;
-    font-size: clamp(0.8rem, 1rem, 1.5rem) !important;
+    width: 5vw;
+    height: 6.5vh;
+    padding-bottom:  2.5rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #000;
     word-wrap: break-word;
     align-items: flex-start;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    
+
+  @include mobile {
+  }
+
+ 
+  @include brk515 {
+  }
+
+  @include portrait {
+  }
 }
