@@ -872,7 +872,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   display: inline-flex;
   flex-direction: column-reverse;
   /*padding: 0 !important;*/
-  margin: auto !important;
+  margin: 0 !important;
 }
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline .form-check-input {
   position: static;
