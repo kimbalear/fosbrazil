@@ -850,24 +850,22 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   padding: 0.5rem;
 }
 .content_st-page_partners > div .logoPT-cnt {
-  max-width: 10rem;
-  box-sizing: border-box;
-  height: 13vh;
-  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-}
-.content_st-page_partners > div .logoPT-cnt img.logo {
-  max-height: 90px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  margin-top: 0.5rem;
   margin: auto;
-  min-height: 24px;
-  overflow: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+}
+.content_st-page_partners > div .logoPT-cnt .img.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .feedback-item-multichoice.multichoice-horizontal .form-check-inline.form-check-label.fitem {

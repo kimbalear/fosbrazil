@@ -150,8 +150,8 @@ $string['about_p2']="Circuitos Não é Não é um curso de extensão que tem com
 $string['about_p3']="O curso é online, gratuito e de curta duração, e oferece certificado para participantes que o concluem. O curso tem conteúdos dinâmicos e baseados em situações de constrangimento e violência frequentemente enfrentadas por mulheres em espaços de lazer. Uma vez iniciado, o curso poderá ser concluído no prazo máximo de três meses. Não há exigência de formação mínima para a matrícula.";
 $string['about_p4']="Realizado em parceria pelo Ministério das Mulheres e a Universidade de Brasília (UnB), o curso conta com apoio técnico das organizações não-governamentais Anis – Instituto de Bioética e Fòs Feminista, e com o suporte do Google.org e do Pacto Global Rede Brasil. Para mais informações sobre o Circuitos Não é Não, visite o site: ";
 $string['aboutPT1'] = 'Realização:';
-$string['aboutPT2'] = 'Suporte técnico:';
-$string['aboutPT3'] = 'Apoio:';
+$string['aboutPT2'] = 'Apoio técnico:';
+$string['aboutPT3'] = 'Com o suporte de:';
 
 // -> contact
 $string['contact_title']="Contato";
