@@ -49,6 +49,10 @@ body {
       div[role="main"] {
         min-height: 100% !important;
       }
+    /* BAO custom*/
+      h2 {
+        display: none;
+      }
     }
   }
 }

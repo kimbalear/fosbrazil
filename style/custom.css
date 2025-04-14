@@ -1008,9 +1008,13 @@ body a:hover {
 }
 #page-content #region-main-box #region-main {
   min-height: 100% !important;
+  /* BAO custom*/
 }
 #page-content #region-main-box #region-main div[role=main] {
   min-height: 100% !important;
+}
+#page-content #region-main-box #region-main h2 {
+  display: none;
 }
 
 .main-inner {
