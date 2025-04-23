@@ -1204,4 +1204,9 @@ div[role=main] iframe {
   display: contents !important;
 }
 
+.urlworkaround {
+  font-size: large;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=custom.css.map */

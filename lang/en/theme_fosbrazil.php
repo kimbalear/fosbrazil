@@ -153,6 +153,7 @@ $string['about_p4'] = "Held in partnership by the Ministry of Women and the Univ
 $string['aboutPT1'] = 'Carried out by:';
 $string['aboutPT2'] = 'Technical support:';
 $string['aboutPT3'] = 'Support:';
+$string['aboutPT4'] = 'Partners:';
 
 // -> contact
 $string['contact_title']="Contact";

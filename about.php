@@ -40,7 +40,10 @@ echo $OUTPUT->header();
             </div>
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+                <div class="logoPT-cnt"><img class="logo google" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+            </div>
+            <div>
+                <div class="aboutPT"><?php echo get_string('aboutPT4', 'theme_fosbrazil'); ?></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
             </div>
         </div>

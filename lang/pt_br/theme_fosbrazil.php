@@ -41,7 +41,7 @@ $string['rawscsspre_desc'] = 'Neste campo, você pode fornecer código SCSS de i
 
 $string['footer_menu1Item1'] = 'Política de Privacidade';
 $string['footer_menu1Item2'] = 'Sobre o Circuitos';
-$string['footer_menu1Item3'] = 'Contacto';
+$string['footer_menu1Item3'] = 'Contato';
 
 $string['footer_copyright'] = 'Informações sobre direitos autorais';
 
@@ -152,6 +152,7 @@ $string['about_p4']="Realizado em parceria pelo Ministério das Mulheres e a Uni
 $string['aboutPT1'] = 'Realização:';
 $string['aboutPT2'] = 'Apoio técnico:';
 $string['aboutPT3'] = 'Com o suporte de:';
+$string['aboutPT4'] = 'Parceiras:';
 
 // -> contact
 $string['contact_title']="Contato";
