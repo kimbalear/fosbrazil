@@ -39,8 +39,8 @@ echo $OUTPUT->header();
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl4; ?>" alt="Logo 4"></div>
             </div>
             <div>
-                <div class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo google" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+                <div class="aboutPT google"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
             </div>
             <div>
                 <div class="aboutPT"><?php echo get_string('aboutPT4', 'theme_fosbrazil'); ?></div>
