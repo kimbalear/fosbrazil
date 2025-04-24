@@ -68,14 +68,120 @@
             flex-wrap: wrap;
             align-content: center;
             align-items: flex-start;
-        }
+          
+            .partnerBox {
+              box-sizing: border-box;
+              text-align: center;
+              min-width: 200px;
+              max-width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+          
+              &.last {
+                grid-column: 1;
+                grid-row: 2;
+              }  
+              .aboutPT {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $G1_00;
+                padding: 0.5rem;
+              }
+          
+              .logoPT-cnt {
+                max-width: 120px;
+                max-height: 120px;
+                width: 100%;
+                height: 110px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.5rem auto;
+          
+                &.single {
+                  max-width: 120px !important;
+                  max-height: 50px !important;
+          
+                  img.logo {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                }
+          
+                img.logo {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
     }
   }
 
   @media (max-width: 709px) {
     .content_st-page_partners {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+  
+    .partnerBox {
+      box-sizing: border-box;
+      text-align: center;
+      min-width: 200px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  
+      &.last {
+        grid-column: 1;
+        grid-row: 2;
+      }  
+      .aboutPT {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $G1_00;
+        padding: 0.5rem;
+      }
+  
+      .logoPT-cnt {
+        max-width: 120px;
+        max-height: 120px;
+        width: 100%;
+        height: 110px;
+        overflow: hidden;
+        display: flex;
         justify-content: center;
-}
+        align-items: center;
+        margin: 0.5rem auto;
+  
+        &.single {
+          max-width: 120px !important;
+          max-height: 50px !important;
+  
+          img.logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+  
+        img.logo {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
   }
  
   
