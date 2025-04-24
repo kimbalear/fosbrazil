@@ -44,7 +44,7 @@ echo $OUTPUT->header();
             </div>
             <div class="partnerBox last">
                 <div class="aboutPT"><?php echo get_string('aboutPT4', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt single"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
+                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
             </div>
         </div>
     </div>
