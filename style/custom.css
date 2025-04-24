@@ -836,7 +836,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   align-items: flex-start;
   gap: 1rem;
 }
-.content_st-page_partners > .partnerBox {
+.content_st-page_partners .partnerBox {
   display: flex;
   flex-direction: column;
   flex: 1 1 30%;
@@ -846,13 +846,13 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   text-align: center;
   margin: auto;
 }
-.content_st-page_partners > .partnerBox .aboutPT {
+.content_st-page_partners .partnerBox .aboutPT {
   font-size: 1.2rem;
   font-weight: 600;
   color: #386641;
   padding: 0.5rem;
 }
-.content_st-page_partners > .partnerBox .logoPT-cnt {
+.content_st-page_partners .partnerBox .logoPT-cnt {
   max-width: 120px;
   max-height: 120px;
   width: 100%;
@@ -866,11 +866,11 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   margin-left: auto;
   margin-right: auto;
 }
-.content_st-page_partners > .partnerBox .logoPT-cnt .single {
+.content_st-page_partners .partnerBox .logoPT-cnt .single {
   max-width: 120px !important;
   max-height: 50px !important;
 }
-.content_st-page_partners > .partnerBox .logoPT-cnt img.logo {
+.content_st-page_partners .partnerBox .logoPT-cnt img.logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
