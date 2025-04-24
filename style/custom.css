@@ -846,6 +846,9 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   text-align: center;
   margin: auto;
 }
+.content_st-page_partners .partnerBox .last {
+  order: -1;
+}
 .content_st-page_partners .partnerBox .aboutPT {
   font-size: 1.2rem;
   font-weight: 600;
@@ -861,10 +864,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.5rem auto;
 }
 .content_st-page_partners .partnerBox .logoPT-cnt .single {
   max-width: 120px !important;

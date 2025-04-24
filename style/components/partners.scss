@@ -4,25 +4,28 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
-
+  
     .partnerBox {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 30%;
-        min-width: 200px;
-        max-width: 250px;
-        box-sizing: border-box;
-        text-align: center;
-        margin: auto;
-
-        .aboutPT {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: $G1_00;
-            padding: 0.5rem;
-        }
-
-
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 30%;
+      min-width: 200px;
+      max-width: 250px;
+      box-sizing: border-box;
+      text-align: center;
+      margin: auto;
+  
+      .last {
+        order: -1;
+      }
+  
+      .aboutPT {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $G1_00;
+        padding: 0.5rem;
+      }
+  
       .logoPT-cnt {
         max-width: 120px;
         max-height: 120px;
@@ -32,25 +35,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        
+        margin: 0.5rem auto;
+  
         .single {
-            max-width: 120px !important;
-            max-height: 50px !important;
-            img.logo {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                }
-            
-           }  img.logo {
+          max-width: 120px !important;
+          max-height: 50px !important;
+  
+          img.logo {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            }
+          }
         }
+  
+        img.logo {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
-}
+  }
+  
