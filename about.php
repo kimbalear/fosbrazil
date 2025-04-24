@@ -28,23 +28,23 @@ echo $OUTPUT->header();
     </div>
     <div class="container-fluid py-4">
         <div class="content_st-page_partners">
-            <div>
+            <div class="partnerBox">
                 <div class="aboutPT"><?php echo get_string('aboutPT1', 'theme_fosbrazil'); ?></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl0; ?>" alt="Logo 0"></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl2; ?>" alt="Logo 2"></div>
             </div>
-            <div>
+            <div class="partnerBox">
                 <div class="aboutPT"><?php echo get_string('aboutPT2', 'theme_fosbrazil'); ?></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl3; ?>" alt="Logo 3"></div>
                 <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl4; ?>" alt="Logo 4"></div>
             </div>
-            <div>
-                <div class="aboutPT google"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
+            <div class="partnerBox">
+                <div class="aboutPT"><?php echo get_string('aboutPT3', 'theme_fosbrazil'); ?></div>
+                <div class="logoPT-cnt single"><img class="logo" src="<?php echo $logourl1; ?>" alt="Logo 1"></div>
             </div>
-            <div>
+            <div class="partnerBox">
                 <div class="aboutPT"><?php echo get_string('aboutPT4', 'theme_fosbrazil'); ?></div>
-                <div class="logoPT-cnt"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
+                <div class="logoPT-cnt single"><img class="logo" src="<?php echo $logourl5; ?>" alt="Logo 5"></div>
             </div>
         </div>
     </div>

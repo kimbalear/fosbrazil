@@ -5,12 +5,15 @@
     align-items: flex-start;
     gap: 1rem;
 
-    > div {
+    > .partnerBox {
+        display: flex;
+        flex-direction: column;
         flex: 1 1 30%;
         min-width: 200px;
         max-width: 250px;
         box-sizing: border-box;
         text-align: center;
+        margin: auto;
 
         .aboutPT {
             font-size: 1.2rem;
@@ -33,12 +36,10 @@
         margin-top: 0.5rem;
         margin-left: auto;
         margin-right: auto;
-        .google {
-            justify-content: flex-start !important;
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-            margin-left: auto; 
-            margin-right: auto;
+        
+        .single {
+            max-width: 120px !important;
+            max-height: 50px !important;
         }
             
             img.logo {
