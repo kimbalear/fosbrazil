@@ -15,7 +15,7 @@
       text-align: center;
       margin: auto;
   
-      .last {
+      &.last {
         order: -1;
       }
   
@@ -37,7 +37,7 @@
         align-items: center;
         margin: 0.5rem auto;
   
-        .single {
+        &.single {
           max-width: 120px !important;
           max-height: 50px !important;
   

@@ -846,7 +846,7 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   text-align: center;
   margin: auto;
 }
-.content_st-page_partners .partnerBox .last {
+.content_st-page_partners .partnerBox.last {
   order: -1;
 }
 .content_st-page_partners .partnerBox .aboutPT {
@@ -866,11 +866,11 @@ input[type=text]:focus, textarea:focus, input[type=password]:focus, input[type=e
   align-items: center;
   margin: 0.5rem auto;
 }
-.content_st-page_partners .partnerBox .logoPT-cnt .single {
+.content_st-page_partners .partnerBox .logoPT-cnt.single {
   max-width: 120px !important;
   max-height: 50px !important;
 }
-.content_st-page_partners .partnerBox .logoPT-cnt .single img.logo {
+.content_st-page_partners .partnerBox .logoPT-cnt.single img.logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
