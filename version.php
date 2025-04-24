@@ -11,7 +11,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_fosbrazil';
 $plugin->release = '1.1';
-$plugin->version = 2025020083;
+$plugin->version = 2025020084;
 $plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_RC;
 $plugin->dependencies = [
