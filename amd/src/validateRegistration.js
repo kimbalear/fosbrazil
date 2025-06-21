@@ -7,6 +7,7 @@ export const validate = () => {
     const yearInput = document.getElementById('id_profile_field_dataofbirth_year');
     const occupationInput = document.getElementById('id_profile_field_occupation');
     const genderInput = document.getElementById('id_profile_field_gender');
+    const cpfInput = document.getElementById('id_profile_field_cpf_number');
     const genderOtherInput = document.getElementById("fitem_id_profile_field_gender_other");
     const occupationOtherInput = document.getElementById("fitem_id_profile_field_occupation_other");
     const occupationSocialMediaInput1 = document.getElementById('fitem_id_profile_field_occupation_socialmedia1');
@@ -27,6 +28,13 @@ export const validate = () => {
         if(!EighteenYearsPassed(dayInput.value,monthInput.value,yearInput.value)){
             event.preventDefault();
             alert('É necessário ter 18 anos ou mais para se registrar neste site.');
+            return false;
+        }
+
+        if (!isValidCPFFormat(cpfInput.value)) {
+            event.preventDefault();
+            alert('Digite um CPF válido.');
+            cpfInput.focus();
             return false;
         }
     });
@@ -75,6 +83,7 @@ export const validate = () => {
             genderText.value = "";
         }
     });
+    
 };
 
 function EighteenYearsPassed(day, month, year) {
@@ -95,3 +104,9 @@ function EighteenYearsPassed(day, month, year) {
     // Check if the input date is on or before the date 18 years ago
     return inputDate <= date18YearsAgo;
   }
+
+  function isValidCPFFormat(cpf) {
+    const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+    return regex.test(cpf);
+  }
+  
