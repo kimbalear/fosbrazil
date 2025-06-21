@@ -38,47 +38,46 @@ export const validate = () => {
             return false;
         }
     });
-
-    occupationInput.addEventListener("change", function() {
-        if (occupationInput.value === "Outro") {
-            occupationOtherInput.style.display = "flex"; // Show the hidden field
-            occupationOtherInput.focus();
-        } else {
-            occupationOtherInput.style.display = "none"; // Hide the field if another option is selected
+    occupationInput.addEventListener("change", function () {
+        const value = occupationInput.value;
+    
+        const isOutro = value === "Outro";
+        occupationOtherInput.style.display = isOutro ? "flex" : "none";
+    
+        if (!isOutro) {
             const occupationText = occupationOtherInput.querySelector("#id_profile_field_occupation_other");
-            occupationText.value = "";
-        }
-    });
-
-    occupationInput.addEventListener("change", function() {
-        if (occupationInput.value.includes("Trabalhador(a)"))  {
-            occupationSocialMediaInput1.style.display = "flex"; // Show the hidden field
-            occupationSocialMediaInput1.focus();
-            occupationSocialMediaInput2.style.display = "flex"; // Show the hidden field
-            occupationSocialMediaInput3.style.display = "flex"; // Show the hidden field
-            occupationSocialMediaInput4.style.display = "flex"; // Show the hidden field
+            if (occupationText) occupationText.value = "";
         } else {
-            occupationSocialMediaInput1.style.display = "none"; // Hide the field if another option is selected
-            const occupationSocialMediaText1 = occupationSocialMediaInput1.querySelector("#id_profile_field_occupation_socialmedia1");
-            occupationSocialMediaText1.value = "";
-            occupationSocialMediaInput2.style.display = "none"; // Hide the field if another option is selected
-            const occupationSocialMediaText2 = occupationSocialMediaInput2.querySelector("#id_profile_field_occupation_socialmedia2");
-            occupationSocialMediaText2.value = "";
-            occupationSocialMediaInput3.style.display = "none"; // Hide the field if another option is selected
-            const occupationSocialMediaText3 = occupationSocialMediaInput3.querySelector("#id_profile_field_occupation_socialmedia3");
-            occupationSocialMediaText3.value = "";
-            occupationSocialMediaInput4.style.display = "none"; // Hide the field if another option is selected
-            const occupationSocialMediaText = occupationSocialMediaInput1.querySelector("#id_profile_field_occupation_socialmedia4");
-            occupationSocialMediaText.value = "";
+            occupationOtherInput.focus();
         }
+    
+        const isTrabalhador = value.includes("Trabalhador(a)");
+        const socialMediaFields = [
+            occupationSocialMediaInput1,
+            occupationSocialMediaInput2,
+            occupationSocialMediaInput3,
+            occupationSocialMediaInput4
+        ];
+    
+        socialMediaFields.forEach((field, index) => {
+            const input = field.querySelector(`#id_profile_field_occupation_socialmedia${index + 1}`);
+            if (isTrabalhador) {
+                field.style.display = "flex";
+                if (index === 0) field.focus();
+            } else {
+                field.style.display = "none";
+                if (input) input.value = "";
+            }
+        });
     });
+    
 
     genderInput.addEventListener("change", function() {
         if (genderInput.value === "Outros") {
-            genderOtherInput.style.display = "flex"; // Show the hidden field
+            genderOtherInput.style.display = "flex";
             genderOtherInput.focus();
         } else {
-            genderOtherInput.style.display = "none"; // Hide the field if another option is selected
+            genderOtherInput.style.display = "none";
             const genderText = occupationOtherInput.querySelector("#id_profile_field_gender_other");
             genderText.value = "";
         }
@@ -87,9 +86,9 @@ export const validate = () => {
 };
 
 function EighteenYearsPassed(day, month, year) {
-    // Convert strings to integers
+  
     const dayInt = parseInt(day, 10);
-    const monthInt = parseInt(month, 10) - 1; // Month is 0-indexed in JavaScript Date
+    const monthInt = parseInt(month, 10) - 1; 
     const yearInt = parseInt(year, 10);
   
     // Create a date object for the input date
